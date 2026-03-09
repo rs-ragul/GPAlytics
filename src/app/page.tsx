@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 import Head from "next/head";
 import Script from "next/script";
 import { 
@@ -118,7 +117,7 @@ export default function HomePage() {
       />
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden">
         {/* Animated gradient background */}
         <div className="absolute inset-0 mesh-gradient" />
         
@@ -150,22 +149,22 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
           >
             <motion.div
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-8"
+              className="inline-flex items-center gap-2 px-3 md:px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6 md:mb-8"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
             >
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium">GPAlytics: AI-Powered Academic Analytics</span>
+              <span className="text-xs md:text-sm font-medium">GPAlytics: AI-Powered Academic Analytics</span>
             </motion.div>
             
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight">
               <span className="text-white">GPAlytics for GPA, CGPA</span>
               <br />
               <span className="gradient-text">and SGPA Calculation</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-2xl text-muted-foreground mb-8 md:mb-10 max-w-3xl mx-auto">
               Free GPA calculator, CGPA calculator, and SGPA calculator for engineering and college students.
               Track, analyze, and predict your academic performance in one place.
             </p>
@@ -194,7 +193,7 @@ export default function HomePage() {
 
           {/* Floating stats */}
           <motion.div
-            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+            className="mt-10 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 max-w-4xl mx-auto"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -205,9 +204,9 @@ export default function HomePage() {
               { value: "0", label: "API Costs" },
               { value: "24/7", label: "Available" },
             ].map((stat, index) => (
-              <GlassCard key={stat.label} className="py-4 px-2">
-                <div className="text-3xl font-bold gradient-text">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+              <GlassCard key={stat.label} className="py-3 md:py-4 px-2">
+                <div className="text-2xl md:text-3xl font-bold gradient-text">{stat.value}</div>
+                <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
               </GlassCard>
             ))}
           </motion.div>
@@ -230,10 +229,10 @@ export default function HomePage() {
       </section>
 
       {/* SEO Learning Section */}
-      <section className="py-20 px-4">
+      <section className="py-14 md:py-20 px-4">
         <div className="max-w-5xl mx-auto space-y-10">
           <GlassCard>
-            <h2 className="text-3xl font-bold mb-4">What is GPA?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">What is GPA?</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 <strong className="text-white">GPA (Grade Point Average)</strong> measures your average performance in a single semester.
@@ -251,11 +250,11 @@ export default function HomePage() {
           </GlassCard>
 
           <GlassCard>
-            <h2 className="text-3xl font-bold mb-4">How to Calculate GPA</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">How to Calculate GPA</h2>
             <p className="text-muted-foreground mb-4">
               Use this formula for GPA, CGPA, and SGPA calculations:
             </p>
-            <div className="text-xl font-semibold p-4 rounded-lg bg-white/5 border border-white/10 mb-4">
+            <div className="text-lg md:text-xl font-semibold p-4 rounded-lg bg-white/5 border border-white/10 mb-4">
               GPA = Sum(credit x grade point) / Sum(credits)
             </div>
             <p className="text-muted-foreground">
@@ -283,9 +282,9 @@ export default function HomePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-4">
+      <section className="py-14 md:py-20 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">Frequently Asked Questions</h2>
           <div className="space-y-4">
             <GlassCard>
               <h3 className="font-semibold mb-2">What is GPA?</h3>
@@ -308,7 +307,7 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 px-4">
+      <section className="py-16 md:py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <motion.div
             className="text-center mb-16"
@@ -316,7 +315,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Everything You Need to <span className="gradient-text">Succeed</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -359,12 +358,12 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-4">
+      <section className="py-16 md:py-24 px-4">
         <div className="max-w-4xl mx-auto">
           <GlassCard className="text-center py-16 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-purple-500/10 to-pink-500/10" />
             <div className="relative z-10">
-              <h2 className="text-4xl font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Ready to Optimize Your Grades?
               </h2>
               <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">

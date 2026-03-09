@@ -137,7 +137,7 @@ export default function GPACalculatorPage() {
               </div>
               
               <motion.div
-                className="text-6xl font-bold mb-2"
+                className="text-5xl sm:text-6xl font-bold mb-2"
                 key={gpa}
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}

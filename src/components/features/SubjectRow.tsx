@@ -28,17 +28,17 @@ export function SubjectRow({
 }: SubjectRowProps) {
   return (
     <motion.div
-      className="grid grid-cols-12 gap-3 items-center p-4 bg-white/5 rounded-xl border border-white/5"
+      className="grid grid-cols-1 sm:grid-cols-12 gap-3 items-center p-4 bg-white/5 rounded-xl border border-white/5"
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 20 }}
       transition={{ duration: 0.2 }}
     >
-      <div className="col-span-1 flex justify-center">
+      <div className="hidden sm:flex sm:col-span-1 justify-center">
         <GripVertical className="w-4 h-4 text-muted-foreground cursor-grab" />
       </div>
       
-      <div className="col-span-4">
+      <div className="sm:col-span-4">
         <input
           type="text"
           placeholder="Subject name"
@@ -48,7 +48,7 @@ export function SubjectRow({
         />
       </div>
       
-      <div className="col-span-2">
+      <div className="sm:col-span-2">
         <input
           type="number"
           min="1"
@@ -59,7 +59,7 @@ export function SubjectRow({
         />
       </div>
       
-      <div className="col-span-4">
+      <div className="sm:col-span-4">
         <select
           value={grade}
           onChange={(e) => onGradeChange(id, e.target.value)}
@@ -74,7 +74,7 @@ export function SubjectRow({
         </select>
       </div>
       
-      <div className="col-span-1 flex justify-center">
+      <div className="sm:col-span-1 flex justify-end sm:justify-center">
         <button
           onClick={() => onRemove(id)}
           className="p-2 rounded-lg hover:bg-error/20 text-muted-foreground hover:text-error transition-colors"
@@ -90,7 +90,7 @@ interface SubjectTableHeaderProps {}
 
 export function SubjectTableHeader({}: SubjectTableHeaderProps) {
   return (
-    <div className="grid grid-cols-12 gap-3 px-4 py-2 text-sm font-medium text-muted-foreground">
+    <div className="hidden sm:grid sm:grid-cols-12 gap-3 px-4 py-2 text-sm font-medium text-muted-foreground">
       <div className="col-span-1"></div>
       <div className="col-span-4">Subject Name</div>
       <div className="col-span-2 text-center">Credits</div>

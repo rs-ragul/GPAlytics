@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -9,6 +10,8 @@ import {
   Calculator, 
   FileText, 
   ChevronDown,
+  Menu,
+  X,
   Scan, 
   Lightbulb, 
   TrendingUp,
@@ -35,6 +38,7 @@ const mainNavItems = [
 
 export function Header() {
   const pathname = usePathname();
+  const [mobileOpen, setMobileOpen] = useState(false);
   const isCalculatorActive = calculatorItems.some((item) => pathname === item.href);
 
   return (
@@ -45,7 +49,7 @@ export function Header() {
       transition={{ duration: 0.5 }}
     >
       <nav className="mx-auto max-w-7xl px-4 py-4">
-        <div className="glass rounded-full px-6 py-3">
+        <div className="glass rounded-3xl md:rounded-full px-4 md:px-6 py-3">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2 mr-3">
               <Image
@@ -154,13 +158,57 @@ export function Header() {
               })}
             </div>
 
-            {/* Mobile menu button - simplified for now */}
-            <div className="md:hidden">
-              <Link href="/gpa-calculator" className="text-sm text-primary font-medium">
-                Calculate
-              </Link>
-            </div>
+            {/* Mobile menu button */}
+            <button
+              type="button"
+              className="md:hidden p-2 rounded-lg bg-white/5 text-white"
+              onClick={() => setMobileOpen((prev) => !prev)}
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
           </div>
+
+          {mobileOpen && (
+            <div className="md:hidden mt-3 border-t border-white/10 pt-3 space-y-2">
+              {mainNavItems.map((item) => {
+                const Icon = item.icon;
+                const isActive = pathname === item.href;
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMobileOpen(false)}
+                    className={cn(
+                      "flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors",
+                      isActive ? "bg-primary/20 text-white" : "text-muted-foreground hover:text-white hover:bg-white/5"
+                    )}
+                  >
+                    <Icon className="w-4 h-4" />
+                    {item.label}
+                  </Link>
+                );
+              })}
+
+              <div className="pt-2 mt-2 border-t border-white/10">
+                <div className="px-3 py-1 text-xs uppercase tracking-wide text-muted-foreground">Calculators</div>
+                {calculatorItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMobileOpen(false)}
+                    className={cn(
+                      "flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors",
+                      pathname === item.href ? "bg-primary/20 text-white" : "text-muted-foreground hover:text-white hover:bg-white/5"
+                    )}
+                  >
+                    <Calculator className="w-4 h-4" />
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </nav>
     </motion.header>
