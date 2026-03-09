@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { X, GripVertical } from "lucide-react";
-import { GRADES, GRADE_POINTS } from "@/lib/utils";
+import { GRADES } from "@/lib/utils";
 import { cn } from "@/lib/utils";
 
 interface SubjectRowProps {
@@ -68,7 +68,7 @@ export function SubjectRow({
           <option value="">Select</option>
           {GRADES.map((g) => (
             <option key={g} value={g}>
-              {g} ({GRADE_POINTS[g]})
+              {g}
             </option>
           ))}
         </select>

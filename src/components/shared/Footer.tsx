@@ -42,7 +42,23 @@ export function Footer() {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-purple-500 flex items-center justify-center">
               <GraduationCap className="w-4 h-4 text-white" />
             </div>
-            <span className="text-lg font-bold gradient-text">GradePilot</span>
+            <span className="text-lg font-bold gradient-text">GPAlytics</span>
+          </div>
+
+          {/* Internal SEO Links */}
+          <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+            <Link href="/about" className="text-muted-foreground hover:text-white transition-colors">
+              About
+            </Link>
+            <Link href="/gpa-calculator" className="text-muted-foreground hover:text-white transition-colors">
+              GPA Calculator
+            </Link>
+            <Link href="/cgpa-calculator" className="text-muted-foreground hover:text-white transition-colors">
+              CGPA Calculator
+            </Link>
+            <Link href="/blog" className="text-muted-foreground hover:text-white transition-colors">
+              Blog
+            </Link>
           </div>
 
           {/* Creator Credits */}
@@ -80,7 +96,7 @@ export function Footer() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          © {new Date().getFullYear()} GradePilot. All rights reserved.
+          © {new Date().getFullYear()} GPAlytics. All rights reserved.
         </motion.div>
       </div>
     </footer>

@@ -1,0 +1,2000 @@
+Advanced Advanced Data Structures
+Advanced Algorithms
+Advanced Analog Electronics
+Advanced Antenna Theory
+Advanced Anthropology
+Advanced Artificial Intelligence
+Advanced Auditing
+Advanced Banking and Insurance
+Advanced Basic Electrical Engineering
+Advanced Basic Electronics Engineering
+Advanced Biochemistry
+Advanced Blockchain Technology
+Advanced Business Analytics
+Advanced Business Economics
+Advanced Business Law
+Advanced CAD CAM
+Advanced Calculus for Engineers
+Advanced Cell Biology
+Advanced Classical Mechanics
+Advanced Cloud Computing
+Advanced Communication Systems
+Advanced Communicative English
+Advanced Compiler Design
+Advanced Complex Analysis
+Advanced Computer Architecture
+Advanced Computer Networks
+Advanced Computer Organization
+Advanced Computer Vision
+Advanced Concrete Technology
+Advanced Construction Management
+Advanced Control Systems
+Advanced Corporate Accounting
+Advanced Cost Accounting
+Advanced Cryptography
+Advanced Cyber Security
+Advanced Data Structures
+Advanced Data Structures Lab
+Advanced Data Structures Laboratory
+Advanced Database Management Systems
+Advanced Deep Learning
+Advanced Design and Analysis of Algorithms
+Advanced Digital Electronics
+Advanced Digital Signal Processing
+Advanced Dynamics of Machines
+Advanced Ecology
+Advanced Electromagnetism
+Advanced Embedded Systems
+Advanced Engineering Chemistry
+Advanced Engineering Graphics
+Advanced Engineering Mathematics I
+Advanced Engineering Mathematics II
+Advanced Engineering Mechanics
+Advanced Engineering Metallurgy
+Advanced Engineering Physics
+Advanced Engineering Workshop
+Advanced English Literature
+Advanced Environmental Engineering
+Advanced Environmental Science
+Advanced Ethical Hacking
+Advanced Financial Accounting
+Advanced Financial Management
+Advanced Finite Element Analysis
+Advanced Fluid Mechanics
+Advanced Genetics
+Advanced Geography
+Advanced Geotechnical Engineering
+Advanced Heat Transfer
+Advanced Heritage of Tamils
+Advanced History of India
+Advanced Human Computer Interaction
+Advanced Human Resource Management
+Advanced Hydraulics
+Advanced Hydrology
+Advanced Income Tax
+Advanced Industrial Engineering
+Advanced Inorganic Chemistry
+Advanced Internet of Things
+Advanced Kinematics of Machines
+Advanced Linear Algebra
+Advanced Linguistics
+Advanced Machine Design
+Advanced Machine Learning
+Advanced Management Accounting
+Advanced Manufacturing Technology
+Advanced Marketing Management
+Advanced Mechanics of Materials
+Advanced Microbiology
+Advanced Microcontrollers
+Advanced Microprocessors
+Advanced Microwave Engineering
+Advanced Mobile Application Development
+Advanced Molecular Biology
+Advanced Natural Language Processing
+Advanced Operating Systems
+Advanced Organic Chemistry
+Advanced Philosophy
+Advanced Physical Chemistry
+Advanced Physics and Chemistry Laboratory
+Advanced Political Science
+Advanced Probability Statistics and Linear Algebra
+Advanced Probability and Statistics
+Advanced Problem Solving and Python Programming
+Advanced Production Engineering
+Advanced Professional English and Functional Skills
+Advanced Programming Lab
+Advanced Programming in C
+Advanced Programming in Python
+Advanced Psychology
+Advanced Public Administration
+Advanced Python Programming Laboratory
+Advanced Quantum Mechanics
+Advanced Real Analysis
+Advanced Robotics
+Advanced Signals and Systems
+Advanced Sociology
+Advanced Software Engineering
+Advanced Soil Mechanics
+Advanced Statistical Mechanics
+Advanced Steel Structures
+Advanced Structural Analysis
+Advanced Structural Engineering
+Advanced Surveying
+Advanced Technical English
+Advanced Thermal Physics
+Advanced Thermodynamics
+Advanced Transportation Engineering
+Advanced Urban Planning
+Advanced VLSI Design
+Advanced Water Resources Engineering
+Advanced Web Development
+Advanced Web Technologies
+Advanced Wireless Communication
+Advanced World History
+Algorithms
+Algorithms Lab
+Algorithms Laboratory
+Analog Electronics
+Analog Electronics Lab
+Analog Electronics Laboratory
+Analysis Advanced Data Structures
+Analysis Algorithms
+Analysis Analog Electronics
+Analysis Antenna Theory
+Analysis Anthropology
+Analysis Artificial Intelligence
+Analysis Auditing
+Analysis Banking and Insurance
+Analysis Basic Electrical Engineering
+Analysis Basic Electronics Engineering
+Analysis Biochemistry
+Analysis Blockchain Technology
+Analysis Business Analytics
+Analysis Business Economics
+Analysis Business Law
+Analysis CAD CAM
+Analysis Calculus for Engineers
+Analysis Cell Biology
+Analysis Classical Mechanics
+Analysis Cloud Computing
+Analysis Communication Systems
+Analysis Communicative English
+Analysis Compiler Design
+Analysis Complex Analysis
+Analysis Computer Architecture
+Analysis Computer Networks
+Analysis Computer Organization
+Analysis Computer Vision
+Analysis Concrete Technology
+Analysis Construction Management
+Analysis Control Systems
+Analysis Corporate Accounting
+Analysis Cost Accounting
+Analysis Cryptography
+Analysis Cyber Security
+Analysis Data Structures
+Analysis Database Management Systems
+Analysis Deep Learning
+Analysis Design and Analysis of Algorithms
+Analysis Digital Electronics
+Analysis Digital Signal Processing
+Analysis Dynamics of Machines
+Analysis Ecology
+Analysis Electromagnetism
+Analysis Embedded Systems
+Analysis Engineering Chemistry
+Analysis Engineering Graphics
+Analysis Engineering Mathematics I
+Analysis Engineering Mathematics II
+Analysis Engineering Mechanics
+Analysis Engineering Metallurgy
+Analysis Engineering Physics
+Analysis Engineering Workshop
+Analysis English Literature
+Analysis Environmental Engineering
+Analysis Environmental Science
+Analysis Ethical Hacking
+Analysis Financial Accounting
+Analysis Financial Management
+Analysis Finite Element Analysis
+Analysis Fluid Mechanics
+Analysis Genetics
+Analysis Geography
+Analysis Geotechnical Engineering
+Analysis Heat Transfer
+Analysis Heritage of Tamils
+Analysis History of India
+Analysis Human Computer Interaction
+Analysis Human Resource Management
+Analysis Hydraulics
+Analysis Hydrology
+Analysis Income Tax
+Analysis Industrial Engineering
+Analysis Inorganic Chemistry
+Analysis Internet of Things
+Analysis Kinematics of Machines
+Analysis Linear Algebra
+Analysis Linguistics
+Analysis Machine Design
+Analysis Machine Learning
+Analysis Management Accounting
+Analysis Manufacturing Technology
+Analysis Marketing Management
+Analysis Mechanics of Materials
+Analysis Microbiology
+Analysis Microcontrollers
+Analysis Microprocessors
+Analysis Microwave Engineering
+Analysis Mobile Application Development
+Analysis Molecular Biology
+Analysis Natural Language Processing
+Analysis Operating Systems
+Analysis Organic Chemistry
+Analysis Philosophy
+Analysis Physical Chemistry
+Analysis Physics and Chemistry Laboratory
+Analysis Political Science
+Analysis Probability Statistics and Linear Algebra
+Analysis Probability and Statistics
+Analysis Problem Solving and Python Programming
+Analysis Production Engineering
+Analysis Professional English and Functional Skills
+Analysis Programming Lab
+Analysis Programming in C
+Analysis Programming in Python
+Analysis Psychology
+Analysis Public Administration
+Analysis Python Programming Laboratory
+Analysis Quantum Mechanics
+Analysis Real Analysis
+Analysis Robotics
+Analysis Signals and Systems
+Analysis Sociology
+Analysis Software Engineering
+Analysis Soil Mechanics
+Analysis Statistical Mechanics
+Analysis Steel Structures
+Analysis Structural Analysis
+Analysis Structural Engineering
+Analysis Surveying
+Analysis Technical English
+Analysis Thermal Physics
+Analysis Thermodynamics
+Analysis Transportation Engineering
+Analysis Urban Planning
+Analysis VLSI Design
+Analysis Water Resources Engineering
+Analysis Web Development
+Analysis Web Technologies
+Analysis Wireless Communication
+Analysis World History
+Antenna Theory
+Antenna Theory Lab
+Antenna Theory Laboratory
+Anthropology
+Anthropology Lab
+Anthropology Laboratory
+Applications of Advanced Data Structures
+Applications of Algorithms
+Applications of Analog Electronics
+Applications of Antenna Theory
+Applications of Anthropology
+Applications of Artificial Intelligence
+Applications of Auditing
+Applications of Banking and Insurance
+Applications of Basic Electrical Engineering
+Applications of Basic Electronics Engineering
+Applications of Biochemistry
+Applications of Blockchain Technology
+Applications of Business Analytics
+Applications of Business Economics
+Applications of Business Law
+Applications of CAD CAM
+Applications of Calculus for Engineers
+Applications of Cell Biology
+Applications of Classical Mechanics
+Applications of Cloud Computing
+Applications of Communication Systems
+Applications of Communicative English
+Applications of Compiler Design
+Applications of Complex Analysis
+Applications of Computer Architecture
+Applications of Computer Networks
+Applications of Computer Organization
+Applications of Computer Vision
+Applications of Concrete Technology
+Applications of Construction Management
+Applications of Control Systems
+Applications of Corporate Accounting
+Applications of Cost Accounting
+Applications of Cryptography
+Applications of Cyber Security
+Applications of Data Structures
+Applications of Database Management Systems
+Applications of Deep Learning
+Applications of Design and Analysis of Algorithms
+Applications of Digital Electronics
+Applications of Digital Signal Processing
+Applications of Dynamics of Machines
+Applications of Ecology
+Applications of Electromagnetism
+Applications of Embedded Systems
+Applications of Engineering Chemistry
+Applications of Engineering Graphics
+Applications of Engineering Mathematics I
+Applications of Engineering Mathematics II
+Applications of Engineering Mechanics
+Applications of Engineering Metallurgy
+Applications of Engineering Physics
+Applications of Engineering Workshop
+Applications of English Literature
+Applications of Environmental Engineering
+Applications of Environmental Science
+Applications of Ethical Hacking
+Applications of Financial Accounting
+Applications of Financial Management
+Applications of Finite Element Analysis
+Applications of Fluid Mechanics
+Applications of Genetics
+Applications of Geography
+Applications of Geotechnical Engineering
+Applications of Heat Transfer
+Applications of Heritage of Tamils
+Applications of History of India
+Applications of Human Computer Interaction
+Applications of Human Resource Management
+Applications of Hydraulics
+Applications of Hydrology
+Applications of Income Tax
+Applications of Industrial Engineering
+Applications of Inorganic Chemistry
+Applications of Internet of Things
+Applications of Kinematics of Machines
+Applications of Linear Algebra
+Applications of Linguistics
+Applications of Machine Design
+Applications of Machine Learning
+Applications of Management Accounting
+Applications of Manufacturing Technology
+Applications of Marketing Management
+Applications of Mechanics of Materials
+Applications of Microbiology
+Applications of Microcontrollers
+Applications of Microprocessors
+Applications of Microwave Engineering
+Applications of Mobile Application Development
+Applications of Molecular Biology
+Applications of Natural Language Processing
+Applications of Operating Systems
+Applications of Organic Chemistry
+Applications of Philosophy
+Applications of Physical Chemistry
+Applications of Physics and Chemistry Laboratory
+Applications of Political Science
+Applications of Probability Statistics and Linear Algebra
+Applications of Probability and Statistics
+Applications of Problem Solving and Python Programming
+Applications of Production Engineering
+Applications of Professional English and Functional Skills
+Applications of Programming Lab
+Applications of Programming in C
+Applications of Programming in Python
+Applications of Psychology
+Applications of Public Administration
+Applications of Python Programming Laboratory
+Applications of Quantum Mechanics
+Applications of Real Analysis
+Applications of Robotics
+Applications of Signals and Systems
+Applications of Sociology
+Applications of Software Engineering
+Applications of Soil Mechanics
+Applications of Statistical Mechanics
+Applications of Steel Structures
+Applications of Structural Analysis
+Applications of Structural Engineering
+Applications of Surveying
+Applications of Technical English
+Applications of Thermal Physics
+Applications of Thermodynamics
+Applications of Transportation Engineering
+Applications of Urban Planning
+Applications of VLSI Design
+Applications of Water Resources Engineering
+Applications of Web Development
+Applications of Web Technologies
+Applications of Wireless Communication
+Applications of World History
+Artificial Intelligence
+Artificial Intelligence Lab
+Artificial Intelligence Laboratory
+Auditing
+Auditing Lab
+Auditing Laboratory
+Banking and Insurance
+Banking and Insurance Lab
+Banking and Insurance Laboratory
+Basic Electrical Engineering
+Basic Electrical Engineering Lab
+Basic Electrical Engineering Laboratory
+Basic Electronics Engineering
+Basic Electronics Engineering Lab
+Basic Electronics Engineering Laboratory
+Biochemistry
+Biochemistry Lab
+Biochemistry Laboratory
+Blockchain Technology
+Blockchain Technology Lab
+Blockchain Technology Laboratory
+Business Analytics
+Business Analytics Lab
+Business Analytics Laboratory
+Business Economics
+Business Economics Lab
+Business Economics Laboratory
+Business Law
+Business Law Lab
+Business Law Laboratory
+CAD CAM
+CAD CAM Lab
+CAD CAM Laboratory
+Calculus for Engineers
+Calculus for Engineers Lab
+Calculus for Engineers Laboratory
+Cell Biology
+Cell Biology Lab
+Cell Biology Laboratory
+Classical Mechanics
+Classical Mechanics Lab
+Classical Mechanics Laboratory
+Cloud Computing
+Cloud Computing Lab
+Cloud Computing Laboratory
+Communication Systems
+Communication Systems Lab
+Communication Systems Laboratory
+Communicative English
+Communicative English Lab
+Communicative English Laboratory
+Compiler Design
+Compiler Design Lab
+Compiler Design Laboratory
+Complex Analysis
+Complex Analysis Lab
+Complex Analysis Laboratory
+Computer Architecture
+Computer Architecture Lab
+Computer Architecture Laboratory
+Computer Networks
+Computer Networks Lab
+Computer Networks Laboratory
+Computer Organization
+Computer Organization Lab
+Computer Organization Laboratory
+Computer Vision
+Computer Vision Lab
+Computer Vision Laboratory
+Concrete Technology
+Concrete Technology Lab
+Concrete Technology Laboratory
+Construction Management
+Construction Management Lab
+Construction Management Laboratory
+Control Systems
+Control Systems Lab
+Control Systems Laboratory
+Corporate Accounting
+Corporate Accounting Lab
+Corporate Accounting Laboratory
+Cost Accounting
+Cost Accounting Lab
+Cost Accounting Laboratory
+Cryptography
+Cryptography Lab
+Cryptography Laboratory
+Cyber Security
+Cyber Security Lab
+Cyber Security Laboratory
+Data Structures
+Data Structures Lab
+Data Structures Laboratory
+Database Management Systems
+Database Management Systems Lab
+Database Management Systems Laboratory
+Deep Learning
+Deep Learning Lab
+Deep Learning Laboratory
+Design Advanced Data Structures
+Design Algorithms
+Design Analog Electronics
+Design Antenna Theory
+Design Anthropology
+Design Artificial Intelligence
+Design Auditing
+Design Banking and Insurance
+Design Basic Electrical Engineering
+Design Basic Electronics Engineering
+Design Biochemistry
+Design Blockchain Technology
+Design Business Analytics
+Design Business Economics
+Design Business Law
+Design CAD CAM
+Design Calculus for Engineers
+Design Cell Biology
+Design Classical Mechanics
+Design Cloud Computing
+Design Communication Systems
+Design Communicative English
+Design Compiler Design
+Design Complex Analysis
+Design Computer Architecture
+Design Computer Networks
+Design Computer Organization
+Design Computer Vision
+Design Concrete Technology
+Design Construction Management
+Design Control Systems
+Design Corporate Accounting
+Design Cost Accounting
+Design Cryptography
+Design Cyber Security
+Design Data Structures
+Design Database Management Systems
+Design Deep Learning
+Design Design and Analysis of Algorithms
+Design Digital Electronics
+Design Digital Signal Processing
+Design Dynamics of Machines
+Design Ecology
+Design Electromagnetism
+Design Embedded Systems
+Design Engineering Chemistry
+Design Engineering Graphics
+Design Engineering Mathematics I
+Design Engineering Mathematics II
+Design Engineering Mechanics
+Design Engineering Metallurgy
+Design Engineering Physics
+Design Engineering Workshop
+Design English Literature
+Design Environmental Engineering
+Design Environmental Science
+Design Ethical Hacking
+Design Financial Accounting
+Design Financial Management
+Design Finite Element Analysis
+Design Fluid Mechanics
+Design Genetics
+Design Geography
+Design Geotechnical Engineering
+Design Heat Transfer
+Design Heritage of Tamils
+Design History of India
+Design Human Computer Interaction
+Design Human Resource Management
+Design Hydraulics
+Design Hydrology
+Design Income Tax
+Design Industrial Engineering
+Design Inorganic Chemistry
+Design Internet of Things
+Design Kinematics of Machines
+Design Linear Algebra
+Design Linguistics
+Design Machine Design
+Design Machine Learning
+Design Management Accounting
+Design Manufacturing Technology
+Design Marketing Management
+Design Mechanics of Materials
+Design Microbiology
+Design Microcontrollers
+Design Microprocessors
+Design Microwave Engineering
+Design Mobile Application Development
+Design Molecular Biology
+Design Natural Language Processing
+Design Operating Systems
+Design Organic Chemistry
+Design Philosophy
+Design Physical Chemistry
+Design Physics and Chemistry Laboratory
+Design Political Science
+Design Probability Statistics and Linear Algebra
+Design Probability and Statistics
+Design Problem Solving and Python Programming
+Design Production Engineering
+Design Professional English and Functional Skills
+Design Programming Lab
+Design Programming in C
+Design Programming in Python
+Design Psychology
+Design Public Administration
+Design Python Programming Laboratory
+Design Quantum Mechanics
+Design Real Analysis
+Design Robotics
+Design Signals and Systems
+Design Sociology
+Design Software Engineering
+Design Soil Mechanics
+Design Statistical Mechanics
+Design Steel Structures
+Design Structural Analysis
+Design Structural Engineering
+Design Surveying
+Design Technical English
+Design Thermal Physics
+Design Thermodynamics
+Design Transportation Engineering
+Design Urban Planning
+Design VLSI Design
+Design Water Resources Engineering
+Design Web Development
+Design Web Technologies
+Design Wireless Communication
+Design World History
+Design and Analysis of Algorithms
+Design and Analysis of Algorithms Lab
+Design and Analysis of Algorithms Laboratory
+Digital Electronics
+Digital Electronics Lab
+Digital Electronics Laboratory
+Digital Signal Processing
+Digital Signal Processing Lab
+Digital Signal Processing Laboratory
+Dynamics of Machines
+Dynamics of Machines Lab
+Dynamics of Machines Laboratory
+Ecology
+Ecology Lab
+Ecology Laboratory
+Electromagnetism
+Electromagnetism Lab
+Electromagnetism Laboratory
+Embedded Systems
+Embedded Systems Lab
+Embedded Systems Laboratory
+Engineering Chemistry
+Engineering Chemistry Lab
+Engineering Chemistry Laboratory
+Engineering Graphics
+Engineering Graphics Lab
+Engineering Graphics Laboratory
+Engineering Mathematics I
+Engineering Mathematics I Lab
+Engineering Mathematics I Laboratory
+Engineering Mathematics II
+Engineering Mathematics II Lab
+Engineering Mathematics II Laboratory
+Engineering Mechanics
+Engineering Mechanics Lab
+Engineering Mechanics Laboratory
+Engineering Metallurgy
+Engineering Metallurgy Lab
+Engineering Metallurgy Laboratory
+Engineering Physics
+Engineering Physics Lab
+Engineering Physics Laboratory
+Engineering Workshop
+Engineering Workshop Lab
+Engineering Workshop Laboratory
+English Literature
+English Literature Lab
+English Literature Laboratory
+Environmental Engineering
+Environmental Engineering Lab
+Environmental Engineering Laboratory
+Environmental Science
+Environmental Science Lab
+Environmental Science Laboratory
+Ethical Hacking
+Ethical Hacking Lab
+Ethical Hacking Laboratory
+Financial Accounting
+Financial Accounting Lab
+Financial Accounting Laboratory
+Financial Management
+Financial Management Lab
+Financial Management Laboratory
+Finite Element Analysis
+Finite Element Analysis Lab
+Finite Element Analysis Laboratory
+Fluid Mechanics
+Fluid Mechanics Lab
+Fluid Mechanics Laboratory
+Fundamentals of Advanced Data Structures
+Fundamentals of Algorithms
+Fundamentals of Analog Electronics
+Fundamentals of Antenna Theory
+Fundamentals of Anthropology
+Fundamentals of Artificial Intelligence
+Fundamentals of Auditing
+Fundamentals of Banking and Insurance
+Fundamentals of Basic Electrical Engineering
+Fundamentals of Basic Electronics Engineering
+Fundamentals of Biochemistry
+Fundamentals of Blockchain Technology
+Fundamentals of Business Analytics
+Fundamentals of Business Economics
+Fundamentals of Business Law
+Fundamentals of CAD CAM
+Fundamentals of Calculus for Engineers
+Fundamentals of Cell Biology
+Fundamentals of Classical Mechanics
+Fundamentals of Cloud Computing
+Fundamentals of Communication Systems
+Fundamentals of Communicative English
+Fundamentals of Compiler Design
+Fundamentals of Complex Analysis
+Fundamentals of Computer Architecture
+Fundamentals of Computer Networks
+Fundamentals of Computer Organization
+Fundamentals of Computer Vision
+Fundamentals of Concrete Technology
+Fundamentals of Construction Management
+Fundamentals of Control Systems
+Fundamentals of Corporate Accounting
+Fundamentals of Cost Accounting
+Fundamentals of Cryptography
+Fundamentals of Cyber Security
+Fundamentals of Data Structures
+Fundamentals of Database Management Systems
+Fundamentals of Deep Learning
+Fundamentals of Design and Analysis of Algorithms
+Fundamentals of Digital Electronics
+Fundamentals of Digital Signal Processing
+Fundamentals of Dynamics of Machines
+Fundamentals of Ecology
+Fundamentals of Electromagnetism
+Fundamentals of Embedded Systems
+Fundamentals of Engineering Chemistry
+Fundamentals of Engineering Graphics
+Fundamentals of Engineering Mathematics I
+Fundamentals of Engineering Mathematics II
+Fundamentals of Engineering Mechanics
+Fundamentals of Engineering Metallurgy
+Fundamentals of Engineering Physics
+Fundamentals of Engineering Workshop
+Fundamentals of English Literature
+Fundamentals of Environmental Engineering
+Fundamentals of Environmental Science
+Fundamentals of Ethical Hacking
+Fundamentals of Financial Accounting
+Fundamentals of Financial Management
+Fundamentals of Finite Element Analysis
+Fundamentals of Fluid Mechanics
+Fundamentals of Genetics
+Fundamentals of Geography
+Fundamentals of Geotechnical Engineering
+Fundamentals of Heat Transfer
+Fundamentals of Heritage of Tamils
+Fundamentals of History of India
+Fundamentals of Human Computer Interaction
+Fundamentals of Human Resource Management
+Fundamentals of Hydraulics
+Fundamentals of Hydrology
+Fundamentals of Income Tax
+Fundamentals of Industrial Engineering
+Fundamentals of Inorganic Chemistry
+Fundamentals of Internet of Things
+Fundamentals of Kinematics of Machines
+Fundamentals of Linear Algebra
+Fundamentals of Linguistics
+Fundamentals of Machine Design
+Fundamentals of Machine Learning
+Fundamentals of Management Accounting
+Fundamentals of Manufacturing Technology
+Fundamentals of Marketing Management
+Fundamentals of Mechanics of Materials
+Fundamentals of Microbiology
+Fundamentals of Microcontrollers
+Fundamentals of Microprocessors
+Fundamentals of Microwave Engineering
+Fundamentals of Mobile Application Development
+Fundamentals of Molecular Biology
+Fundamentals of Natural Language Processing
+Fundamentals of Operating Systems
+Fundamentals of Organic Chemistry
+Fundamentals of Philosophy
+Fundamentals of Physical Chemistry
+Fundamentals of Physics and Chemistry Laboratory
+Fundamentals of Political Science
+Fundamentals of Probability Statistics and Linear Algebra
+Fundamentals of Probability and Statistics
+Fundamentals of Problem Solving and Python Programming
+Fundamentals of Production Engineering
+Fundamentals of Professional English and Functional Skills
+Fundamentals of Programming Lab
+Fundamentals of Programming in C
+Fundamentals of Programming in Python
+Fundamentals of Psychology
+Fundamentals of Public Administration
+Fundamentals of Python Programming Laboratory
+Fundamentals of Quantum Mechanics
+Fundamentals of Real Analysis
+Fundamentals of Robotics
+Fundamentals of Signals and Systems
+Fundamentals of Sociology
+Fundamentals of Software Engineering
+Fundamentals of Soil Mechanics
+Fundamentals of Statistical Mechanics
+Fundamentals of Steel Structures
+Fundamentals of Structural Analysis
+Fundamentals of Structural Engineering
+Fundamentals of Surveying
+Fundamentals of Technical English
+Fundamentals of Thermal Physics
+Fundamentals of Thermodynamics
+Fundamentals of Transportation Engineering
+Fundamentals of Urban Planning
+Fundamentals of VLSI Design
+Fundamentals of Water Resources Engineering
+Fundamentals of Web Development
+Fundamentals of Web Technologies
+Fundamentals of Wireless Communication
+Fundamentals of World History
+Genetics
+Genetics Lab
+Genetics Laboratory
+Geography
+Geography Lab
+Geography Laboratory
+Geotechnical Engineering
+Geotechnical Engineering Lab
+Geotechnical Engineering Laboratory
+Heat Transfer
+Heat Transfer Lab
+Heat Transfer Laboratory
+Heritage of Tamils
+Heritage of Tamils Lab
+Heritage of Tamils Laboratory
+History of India
+History of India Lab
+History of India Laboratory
+Human Computer Interaction
+Human Computer Interaction Lab
+Human Computer Interaction Laboratory
+Human Resource Management
+Human Resource Management Lab
+Human Resource Management Laboratory
+Hydraulics
+Hydraulics Lab
+Hydraulics Laboratory
+Hydrology
+Hydrology Lab
+Hydrology Laboratory
+Income Tax
+Income Tax Lab
+Income Tax Laboratory
+Industrial Engineering
+Industrial Engineering Lab
+Industrial Engineering Laboratory
+Inorganic Chemistry
+Inorganic Chemistry Lab
+Inorganic Chemistry Laboratory
+Internet of Things
+Internet of Things Lab
+Internet of Things Laboratory
+Introduction to Advanced Data Structures
+Introduction to Algorithms
+Introduction to Analog Electronics
+Introduction to Antenna Theory
+Introduction to Anthropology
+Introduction to Artificial Intelligence
+Introduction to Auditing
+Introduction to Banking and Insurance
+Introduction to Basic Electrical Engineering
+Introduction to Basic Electronics Engineering
+Introduction to Biochemistry
+Introduction to Blockchain Technology
+Introduction to Business Analytics
+Introduction to Business Economics
+Introduction to Business Law
+Introduction to CAD CAM
+Introduction to Calculus for Engineers
+Introduction to Cell Biology
+Introduction to Classical Mechanics
+Introduction to Cloud Computing
+Introduction to Communication Systems
+Introduction to Communicative English
+Introduction to Compiler Design
+Introduction to Complex Analysis
+Introduction to Computer Architecture
+Introduction to Computer Networks
+Introduction to Computer Organization
+Introduction to Computer Vision
+Introduction to Concrete Technology
+Introduction to Construction Management
+Introduction to Control Systems
+Introduction to Corporate Accounting
+Introduction to Cost Accounting
+Introduction to Cryptography
+Introduction to Cyber Security
+Introduction to Data Structures
+Introduction to Database Management Systems
+Introduction to Deep Learning
+Introduction to Design and Analysis of Algorithms
+Introduction to Digital Electronics
+Introduction to Digital Signal Processing
+Introduction to Dynamics of Machines
+Introduction to Ecology
+Introduction to Electromagnetism
+Introduction to Embedded Systems
+Introduction to Engineering Chemistry
+Introduction to Engineering Graphics
+Introduction to Engineering Mathematics I
+Introduction to Engineering Mathematics II
+Introduction to Engineering Mechanics
+Introduction to Engineering Metallurgy
+Introduction to Engineering Physics
+Introduction to Engineering Workshop
+Introduction to English Literature
+Introduction to Environmental Engineering
+Introduction to Environmental Science
+Introduction to Ethical Hacking
+Introduction to Financial Accounting
+Introduction to Financial Management
+Introduction to Finite Element Analysis
+Introduction to Fluid Mechanics
+Introduction to Genetics
+Introduction to Geography
+Introduction to Geotechnical Engineering
+Introduction to Heat Transfer
+Introduction to Heritage of Tamils
+Introduction to History of India
+Introduction to Human Computer Interaction
+Introduction to Human Resource Management
+Introduction to Hydraulics
+Introduction to Hydrology
+Introduction to Income Tax
+Introduction to Industrial Engineering
+Introduction to Inorganic Chemistry
+Introduction to Internet of Things
+Introduction to Kinematics of Machines
+Introduction to Linear Algebra
+Introduction to Linguistics
+Introduction to Machine Design
+Introduction to Machine Learning
+Introduction to Management Accounting
+Introduction to Manufacturing Technology
+Introduction to Marketing Management
+Introduction to Mechanics of Materials
+Introduction to Microbiology
+Introduction to Microcontrollers
+Introduction to Microprocessors
+Introduction to Microwave Engineering
+Introduction to Mobile Application Development
+Introduction to Molecular Biology
+Introduction to Natural Language Processing
+Introduction to Operating Systems
+Introduction to Organic Chemistry
+Introduction to Philosophy
+Introduction to Physical Chemistry
+Introduction to Physics and Chemistry Laboratory
+Introduction to Political Science
+Introduction to Probability Statistics and Linear Algebra
+Introduction to Probability and Statistics
+Introduction to Problem Solving and Python Programming
+Introduction to Production Engineering
+Introduction to Professional English and Functional Skills
+Introduction to Programming Lab
+Introduction to Programming in C
+Introduction to Programming in Python
+Introduction to Psychology
+Introduction to Public Administration
+Introduction to Python Programming Laboratory
+Introduction to Quantum Mechanics
+Introduction to Real Analysis
+Introduction to Robotics
+Introduction to Signals and Systems
+Introduction to Sociology
+Introduction to Software Engineering
+Introduction to Soil Mechanics
+Introduction to Statistical Mechanics
+Introduction to Steel Structures
+Introduction to Structural Analysis
+Introduction to Structural Engineering
+Introduction to Surveying
+Introduction to Technical English
+Introduction to Thermal Physics
+Introduction to Thermodynamics
+Introduction to Transportation Engineering
+Introduction to Urban Planning
+Introduction to VLSI Design
+Introduction to Water Resources Engineering
+Introduction to Web Development
+Introduction to Web Technologies
+Introduction to Wireless Communication
+Introduction to World History
+Kinematics of Machines
+Kinematics of Machines Lab
+Kinematics of Machines Laboratory
+Linear Algebra
+Linear Algebra Lab
+Linear Algebra Laboratory
+Linguistics
+Linguistics Lab
+Linguistics Laboratory
+Machine Design
+Machine Design Lab
+Machine Design Laboratory
+Machine Learning
+Machine Learning Lab
+Machine Learning Laboratory
+Management Accounting
+Management Accounting Lab
+Management Accounting Laboratory
+Manufacturing Technology
+Manufacturing Technology Lab
+Manufacturing Technology Laboratory
+Marketing Management
+Marketing Management Lab
+Marketing Management Laboratory
+Mechanics of Materials
+Mechanics of Materials Lab
+Mechanics of Materials Laboratory
+Microbiology
+Microbiology Lab
+Microbiology Laboratory
+Microcontrollers
+Microcontrollers Lab
+Microcontrollers Laboratory
+Microprocessors
+Microprocessors Lab
+Microprocessors Laboratory
+Microwave Engineering
+Microwave Engineering Lab
+Microwave Engineering Laboratory
+Mobile Application Development
+Mobile Application Development Lab
+Mobile Application Development Laboratory
+Molecular Biology
+Molecular Biology Lab
+Molecular Biology Laboratory
+Natural Language Processing
+Natural Language Processing Lab
+Natural Language Processing Laboratory
+Operating Systems
+Operating Systems Lab
+Operating Systems Laboratory
+Organic Chemistry
+Organic Chemistry Lab
+Organic Chemistry Laboratory
+Philosophy
+Philosophy Lab
+Philosophy Laboratory
+Physical Chemistry
+Physical Chemistry Lab
+Physical Chemistry Laboratory
+Physics and Chemistry Laboratory
+Physics and Chemistry Laboratory Lab
+Physics and Chemistry Laboratory Laboratory
+Political Science
+Political Science Lab
+Political Science Laboratory
+Probability Statistics and Linear Algebra
+Probability Statistics and Linear Algebra Lab
+Probability Statistics and Linear Algebra Laboratory
+Probability and Statistics
+Probability and Statistics Lab
+Probability and Statistics Laboratory
+Problem Solving and Python Programming
+Problem Solving and Python Programming Lab
+Problem Solving and Python Programming Laboratory
+Production Engineering
+Production Engineering Lab
+Production Engineering Laboratory
+Professional English and Functional Skills
+Professional English and Functional Skills Lab
+Professional English and Functional Skills Laboratory
+Programming Lab
+Programming Lab Lab
+Programming Lab Laboratory
+Programming in C
+Programming in C Lab
+Programming in C Laboratory
+Programming in Python
+Programming in Python Lab
+Programming in Python Laboratory
+Psychology
+Psychology Lab
+Psychology Laboratory
+Public Administration
+Public Administration Lab
+Public Administration Laboratory
+Python Programming Laboratory
+Python Programming Laboratory Lab
+Python Programming Laboratory Laboratory
+Quantum Mechanics
+Quantum Mechanics Lab
+Quantum Mechanics Laboratory
+Real Analysis
+Real Analysis Lab
+Real Analysis Laboratory
+Robotics
+Robotics Lab
+Robotics Laboratory
+Signals and Systems
+Signals and Systems Lab
+Signals and Systems Laboratory
+Sociology
+Sociology Lab
+Sociology Laboratory
+Software Engineering
+Software Engineering Lab
+Software Engineering Laboratory
+Soil Mechanics
+Soil Mechanics Lab
+Soil Mechanics Laboratory
+Special Topics in Engineering 1
+Special Topics in Engineering 10
+Special Topics in Engineering 100
+Special Topics in Engineering 101
+Special Topics in Engineering 102
+Special Topics in Engineering 103
+Special Topics in Engineering 104
+Special Topics in Engineering 105
+Special Topics in Engineering 106
+Special Topics in Engineering 107
+Special Topics in Engineering 108
+Special Topics in Engineering 109
+Special Topics in Engineering 11
+Special Topics in Engineering 110
+Special Topics in Engineering 111
+Special Topics in Engineering 112
+Special Topics in Engineering 113
+Special Topics in Engineering 114
+Special Topics in Engineering 115
+Special Topics in Engineering 116
+Special Topics in Engineering 117
+Special Topics in Engineering 118
+Special Topics in Engineering 119
+Special Topics in Engineering 12
+Special Topics in Engineering 120
+Special Topics in Engineering 121
+Special Topics in Engineering 122
+Special Topics in Engineering 123
+Special Topics in Engineering 124
+Special Topics in Engineering 125
+Special Topics in Engineering 126
+Special Topics in Engineering 127
+Special Topics in Engineering 128
+Special Topics in Engineering 129
+Special Topics in Engineering 13
+Special Topics in Engineering 130
+Special Topics in Engineering 131
+Special Topics in Engineering 132
+Special Topics in Engineering 133
+Special Topics in Engineering 134
+Special Topics in Engineering 135
+Special Topics in Engineering 136
+Special Topics in Engineering 137
+Special Topics in Engineering 138
+Special Topics in Engineering 139
+Special Topics in Engineering 14
+Special Topics in Engineering 140
+Special Topics in Engineering 141
+Special Topics in Engineering 142
+Special Topics in Engineering 143
+Special Topics in Engineering 144
+Special Topics in Engineering 145
+Special Topics in Engineering 146
+Special Topics in Engineering 147
+Special Topics in Engineering 148
+Special Topics in Engineering 149
+Special Topics in Engineering 15
+Special Topics in Engineering 150
+Special Topics in Engineering 151
+Special Topics in Engineering 152
+Special Topics in Engineering 153
+Special Topics in Engineering 154
+Special Topics in Engineering 155
+Special Topics in Engineering 156
+Special Topics in Engineering 157
+Special Topics in Engineering 158
+Special Topics in Engineering 159
+Special Topics in Engineering 16
+Special Topics in Engineering 160
+Special Topics in Engineering 161
+Special Topics in Engineering 162
+Special Topics in Engineering 163
+Special Topics in Engineering 164
+Special Topics in Engineering 165
+Special Topics in Engineering 166
+Special Topics in Engineering 167
+Special Topics in Engineering 168
+Special Topics in Engineering 169
+Special Topics in Engineering 17
+Special Topics in Engineering 170
+Special Topics in Engineering 171
+Special Topics in Engineering 172
+Special Topics in Engineering 173
+Special Topics in Engineering 174
+Special Topics in Engineering 175
+Special Topics in Engineering 176
+Special Topics in Engineering 177
+Special Topics in Engineering 178
+Special Topics in Engineering 179
+Special Topics in Engineering 18
+Special Topics in Engineering 180
+Special Topics in Engineering 181
+Special Topics in Engineering 182
+Special Topics in Engineering 183
+Special Topics in Engineering 184
+Special Topics in Engineering 185
+Special Topics in Engineering 186
+Special Topics in Engineering 187
+Special Topics in Engineering 188
+Special Topics in Engineering 189
+Special Topics in Engineering 19
+Special Topics in Engineering 190
+Special Topics in Engineering 191
+Special Topics in Engineering 192
+Special Topics in Engineering 193
+Special Topics in Engineering 194
+Special Topics in Engineering 195
+Special Topics in Engineering 196
+Special Topics in Engineering 197
+Special Topics in Engineering 198
+Special Topics in Engineering 199
+Special Topics in Engineering 2
+Special Topics in Engineering 20
+Special Topics in Engineering 200
+Special Topics in Engineering 201
+Special Topics in Engineering 202
+Special Topics in Engineering 203
+Special Topics in Engineering 204
+Special Topics in Engineering 205
+Special Topics in Engineering 206
+Special Topics in Engineering 207
+Special Topics in Engineering 208
+Special Topics in Engineering 209
+Special Topics in Engineering 21
+Special Topics in Engineering 210
+Special Topics in Engineering 211
+Special Topics in Engineering 212
+Special Topics in Engineering 213
+Special Topics in Engineering 214
+Special Topics in Engineering 215
+Special Topics in Engineering 216
+Special Topics in Engineering 217
+Special Topics in Engineering 218
+Special Topics in Engineering 219
+Special Topics in Engineering 22
+Special Topics in Engineering 220
+Special Topics in Engineering 221
+Special Topics in Engineering 222
+Special Topics in Engineering 223
+Special Topics in Engineering 224
+Special Topics in Engineering 225
+Special Topics in Engineering 226
+Special Topics in Engineering 227
+Special Topics in Engineering 228
+Special Topics in Engineering 229
+Special Topics in Engineering 23
+Special Topics in Engineering 230
+Special Topics in Engineering 231
+Special Topics in Engineering 232
+Special Topics in Engineering 233
+Special Topics in Engineering 234
+Special Topics in Engineering 235
+Special Topics in Engineering 236
+Special Topics in Engineering 237
+Special Topics in Engineering 238
+Special Topics in Engineering 239
+Special Topics in Engineering 24
+Special Topics in Engineering 240
+Special Topics in Engineering 241
+Special Topics in Engineering 242
+Special Topics in Engineering 243
+Special Topics in Engineering 244
+Special Topics in Engineering 245
+Special Topics in Engineering 246
+Special Topics in Engineering 247
+Special Topics in Engineering 248
+Special Topics in Engineering 249
+Special Topics in Engineering 25
+Special Topics in Engineering 250
+Special Topics in Engineering 251
+Special Topics in Engineering 252
+Special Topics in Engineering 253
+Special Topics in Engineering 254
+Special Topics in Engineering 255
+Special Topics in Engineering 256
+Special Topics in Engineering 257
+Special Topics in Engineering 258
+Special Topics in Engineering 259
+Special Topics in Engineering 26
+Special Topics in Engineering 260
+Special Topics in Engineering 261
+Special Topics in Engineering 262
+Special Topics in Engineering 263
+Special Topics in Engineering 264
+Special Topics in Engineering 265
+Special Topics in Engineering 266
+Special Topics in Engineering 267
+Special Topics in Engineering 268
+Special Topics in Engineering 269
+Special Topics in Engineering 27
+Special Topics in Engineering 270
+Special Topics in Engineering 271
+Special Topics in Engineering 272
+Special Topics in Engineering 273
+Special Topics in Engineering 274
+Special Topics in Engineering 275
+Special Topics in Engineering 276
+Special Topics in Engineering 277
+Special Topics in Engineering 278
+Special Topics in Engineering 279
+Special Topics in Engineering 28
+Special Topics in Engineering 280
+Special Topics in Engineering 281
+Special Topics in Engineering 282
+Special Topics in Engineering 283
+Special Topics in Engineering 284
+Special Topics in Engineering 285
+Special Topics in Engineering 286
+Special Topics in Engineering 287
+Special Topics in Engineering 288
+Special Topics in Engineering 289
+Special Topics in Engineering 29
+Special Topics in Engineering 290
+Special Topics in Engineering 291
+Special Topics in Engineering 292
+Special Topics in Engineering 293
+Special Topics in Engineering 294
+Special Topics in Engineering 295
+Special Topics in Engineering 296
+Special Topics in Engineering 297
+Special Topics in Engineering 298
+Special Topics in Engineering 299
+Special Topics in Engineering 3
+Special Topics in Engineering 30
+Special Topics in Engineering 300
+Special Topics in Engineering 301
+Special Topics in Engineering 302
+Special Topics in Engineering 303
+Special Topics in Engineering 304
+Special Topics in Engineering 305
+Special Topics in Engineering 306
+Special Topics in Engineering 307
+Special Topics in Engineering 308
+Special Topics in Engineering 309
+Special Topics in Engineering 31
+Special Topics in Engineering 310
+Special Topics in Engineering 311
+Special Topics in Engineering 312
+Special Topics in Engineering 313
+Special Topics in Engineering 314
+Special Topics in Engineering 315
+Special Topics in Engineering 316
+Special Topics in Engineering 317
+Special Topics in Engineering 318
+Special Topics in Engineering 319
+Special Topics in Engineering 32
+Special Topics in Engineering 320
+Special Topics in Engineering 321
+Special Topics in Engineering 322
+Special Topics in Engineering 323
+Special Topics in Engineering 324
+Special Topics in Engineering 325
+Special Topics in Engineering 326
+Special Topics in Engineering 327
+Special Topics in Engineering 328
+Special Topics in Engineering 329
+Special Topics in Engineering 33
+Special Topics in Engineering 330
+Special Topics in Engineering 331
+Special Topics in Engineering 332
+Special Topics in Engineering 333
+Special Topics in Engineering 334
+Special Topics in Engineering 335
+Special Topics in Engineering 336
+Special Topics in Engineering 337
+Special Topics in Engineering 338
+Special Topics in Engineering 339
+Special Topics in Engineering 34
+Special Topics in Engineering 340
+Special Topics in Engineering 341
+Special Topics in Engineering 342
+Special Topics in Engineering 343
+Special Topics in Engineering 344
+Special Topics in Engineering 345
+Special Topics in Engineering 346
+Special Topics in Engineering 347
+Special Topics in Engineering 348
+Special Topics in Engineering 349
+Special Topics in Engineering 35
+Special Topics in Engineering 350
+Special Topics in Engineering 351
+Special Topics in Engineering 352
+Special Topics in Engineering 353
+Special Topics in Engineering 354
+Special Topics in Engineering 355
+Special Topics in Engineering 356
+Special Topics in Engineering 357
+Special Topics in Engineering 358
+Special Topics in Engineering 359
+Special Topics in Engineering 36
+Special Topics in Engineering 360
+Special Topics in Engineering 361
+Special Topics in Engineering 362
+Special Topics in Engineering 363
+Special Topics in Engineering 364
+Special Topics in Engineering 365
+Special Topics in Engineering 366
+Special Topics in Engineering 367
+Special Topics in Engineering 368
+Special Topics in Engineering 369
+Special Topics in Engineering 37
+Special Topics in Engineering 370
+Special Topics in Engineering 371
+Special Topics in Engineering 372
+Special Topics in Engineering 373
+Special Topics in Engineering 374
+Special Topics in Engineering 375
+Special Topics in Engineering 376
+Special Topics in Engineering 377
+Special Topics in Engineering 378
+Special Topics in Engineering 379
+Special Topics in Engineering 38
+Special Topics in Engineering 380
+Special Topics in Engineering 381
+Special Topics in Engineering 382
+Special Topics in Engineering 383
+Special Topics in Engineering 384
+Special Topics in Engineering 385
+Special Topics in Engineering 386
+Special Topics in Engineering 387
+Special Topics in Engineering 388
+Special Topics in Engineering 389
+Special Topics in Engineering 39
+Special Topics in Engineering 390
+Special Topics in Engineering 391
+Special Topics in Engineering 392
+Special Topics in Engineering 393
+Special Topics in Engineering 394
+Special Topics in Engineering 395
+Special Topics in Engineering 396
+Special Topics in Engineering 397
+Special Topics in Engineering 398
+Special Topics in Engineering 399
+Special Topics in Engineering 4
+Special Topics in Engineering 40
+Special Topics in Engineering 400
+Special Topics in Engineering 401
+Special Topics in Engineering 402
+Special Topics in Engineering 403
+Special Topics in Engineering 404
+Special Topics in Engineering 405
+Special Topics in Engineering 406
+Special Topics in Engineering 407
+Special Topics in Engineering 408
+Special Topics in Engineering 409
+Special Topics in Engineering 41
+Special Topics in Engineering 410
+Special Topics in Engineering 411
+Special Topics in Engineering 412
+Special Topics in Engineering 413
+Special Topics in Engineering 414
+Special Topics in Engineering 415
+Special Topics in Engineering 416
+Special Topics in Engineering 417
+Special Topics in Engineering 418
+Special Topics in Engineering 419
+Special Topics in Engineering 42
+Special Topics in Engineering 420
+Special Topics in Engineering 421
+Special Topics in Engineering 422
+Special Topics in Engineering 423
+Special Topics in Engineering 424
+Special Topics in Engineering 425
+Special Topics in Engineering 426
+Special Topics in Engineering 427
+Special Topics in Engineering 428
+Special Topics in Engineering 429
+Special Topics in Engineering 43
+Special Topics in Engineering 430
+Special Topics in Engineering 431
+Special Topics in Engineering 432
+Special Topics in Engineering 433
+Special Topics in Engineering 434
+Special Topics in Engineering 435
+Special Topics in Engineering 436
+Special Topics in Engineering 437
+Special Topics in Engineering 438
+Special Topics in Engineering 439
+Special Topics in Engineering 44
+Special Topics in Engineering 440
+Special Topics in Engineering 441
+Special Topics in Engineering 442
+Special Topics in Engineering 443
+Special Topics in Engineering 444
+Special Topics in Engineering 445
+Special Topics in Engineering 446
+Special Topics in Engineering 447
+Special Topics in Engineering 448
+Special Topics in Engineering 449
+Special Topics in Engineering 45
+Special Topics in Engineering 450
+Special Topics in Engineering 451
+Special Topics in Engineering 452
+Special Topics in Engineering 453
+Special Topics in Engineering 454
+Special Topics in Engineering 455
+Special Topics in Engineering 456
+Special Topics in Engineering 457
+Special Topics in Engineering 458
+Special Topics in Engineering 459
+Special Topics in Engineering 46
+Special Topics in Engineering 460
+Special Topics in Engineering 461
+Special Topics in Engineering 462
+Special Topics in Engineering 463
+Special Topics in Engineering 464
+Special Topics in Engineering 465
+Special Topics in Engineering 466
+Special Topics in Engineering 467
+Special Topics in Engineering 468
+Special Topics in Engineering 469
+Special Topics in Engineering 47
+Special Topics in Engineering 470
+Special Topics in Engineering 471
+Special Topics in Engineering 472
+Special Topics in Engineering 473
+Special Topics in Engineering 474
+Special Topics in Engineering 475
+Special Topics in Engineering 476
+Special Topics in Engineering 477
+Special Topics in Engineering 478
+Special Topics in Engineering 479
+Special Topics in Engineering 48
+Special Topics in Engineering 480
+Special Topics in Engineering 481
+Special Topics in Engineering 482
+Special Topics in Engineering 483
+Special Topics in Engineering 484
+Special Topics in Engineering 485
+Special Topics in Engineering 486
+Special Topics in Engineering 487
+Special Topics in Engineering 488
+Special Topics in Engineering 489
+Special Topics in Engineering 49
+Special Topics in Engineering 490
+Special Topics in Engineering 491
+Special Topics in Engineering 492
+Special Topics in Engineering 493
+Special Topics in Engineering 494
+Special Topics in Engineering 495
+Special Topics in Engineering 496
+Special Topics in Engineering 497
+Special Topics in Engineering 498
+Special Topics in Engineering 499
+Special Topics in Engineering 5
+Special Topics in Engineering 50
+Special Topics in Engineering 500
+Special Topics in Engineering 501
+Special Topics in Engineering 502
+Special Topics in Engineering 503
+Special Topics in Engineering 504
+Special Topics in Engineering 505
+Special Topics in Engineering 506
+Special Topics in Engineering 507
+Special Topics in Engineering 508
+Special Topics in Engineering 509
+Special Topics in Engineering 51
+Special Topics in Engineering 510
+Special Topics in Engineering 511
+Special Topics in Engineering 512
+Special Topics in Engineering 513
+Special Topics in Engineering 514
+Special Topics in Engineering 515
+Special Topics in Engineering 516
+Special Topics in Engineering 517
+Special Topics in Engineering 518
+Special Topics in Engineering 519
+Special Topics in Engineering 52
+Special Topics in Engineering 520
+Special Topics in Engineering 521
+Special Topics in Engineering 522
+Special Topics in Engineering 523
+Special Topics in Engineering 524
+Special Topics in Engineering 525
+Special Topics in Engineering 526
+Special Topics in Engineering 527
+Special Topics in Engineering 528
+Special Topics in Engineering 529
+Special Topics in Engineering 53
+Special Topics in Engineering 530
+Special Topics in Engineering 531
+Special Topics in Engineering 532
+Special Topics in Engineering 533
+Special Topics in Engineering 534
+Special Topics in Engineering 535
+Special Topics in Engineering 536
+Special Topics in Engineering 537
+Special Topics in Engineering 538
+Special Topics in Engineering 539
+Special Topics in Engineering 54
+Special Topics in Engineering 540
+Special Topics in Engineering 541
+Special Topics in Engineering 542
+Special Topics in Engineering 543
+Special Topics in Engineering 544
+Special Topics in Engineering 545
+Special Topics in Engineering 546
+Special Topics in Engineering 547
+Special Topics in Engineering 548
+Special Topics in Engineering 549
+Special Topics in Engineering 55
+Special Topics in Engineering 550
+Special Topics in Engineering 551
+Special Topics in Engineering 552
+Special Topics in Engineering 553
+Special Topics in Engineering 554
+Special Topics in Engineering 555
+Special Topics in Engineering 556
+Special Topics in Engineering 557
+Special Topics in Engineering 558
+Special Topics in Engineering 559
+Special Topics in Engineering 56
+Special Topics in Engineering 560
+Special Topics in Engineering 561
+Special Topics in Engineering 562
+Special Topics in Engineering 563
+Special Topics in Engineering 564
+Special Topics in Engineering 565
+Special Topics in Engineering 566
+Special Topics in Engineering 567
+Special Topics in Engineering 568
+Special Topics in Engineering 569
+Special Topics in Engineering 57
+Special Topics in Engineering 570
+Special Topics in Engineering 571
+Special Topics in Engineering 572
+Special Topics in Engineering 573
+Special Topics in Engineering 574
+Special Topics in Engineering 575
+Special Topics in Engineering 576
+Special Topics in Engineering 577
+Special Topics in Engineering 578
+Special Topics in Engineering 579
+Special Topics in Engineering 58
+Special Topics in Engineering 580
+Special Topics in Engineering 581
+Special Topics in Engineering 582
+Special Topics in Engineering 583
+Special Topics in Engineering 584
+Special Topics in Engineering 585
+Special Topics in Engineering 586
+Special Topics in Engineering 587
+Special Topics in Engineering 588
+Special Topics in Engineering 589
+Special Topics in Engineering 59
+Special Topics in Engineering 590
+Special Topics in Engineering 591
+Special Topics in Engineering 592
+Special Topics in Engineering 593
+Special Topics in Engineering 594
+Special Topics in Engineering 595
+Special Topics in Engineering 596
+Special Topics in Engineering 597
+Special Topics in Engineering 598
+Special Topics in Engineering 599
+Special Topics in Engineering 6
+Special Topics in Engineering 60
+Special Topics in Engineering 600
+Special Topics in Engineering 601
+Special Topics in Engineering 602
+Special Topics in Engineering 603
+Special Topics in Engineering 604
+Special Topics in Engineering 605
+Special Topics in Engineering 606
+Special Topics in Engineering 607
+Special Topics in Engineering 608
+Special Topics in Engineering 609
+Special Topics in Engineering 61
+Special Topics in Engineering 610
+Special Topics in Engineering 611
+Special Topics in Engineering 612
+Special Topics in Engineering 613
+Special Topics in Engineering 614
+Special Topics in Engineering 615
+Special Topics in Engineering 616
+Special Topics in Engineering 617
+Special Topics in Engineering 618
+Special Topics in Engineering 619
+Special Topics in Engineering 62
+Special Topics in Engineering 620
+Special Topics in Engineering 621
+Special Topics in Engineering 622
+Special Topics in Engineering 623
+Special Topics in Engineering 624
+Special Topics in Engineering 625
+Special Topics in Engineering 626
+Special Topics in Engineering 627
+Special Topics in Engineering 628
+Special Topics in Engineering 629
+Special Topics in Engineering 63
+Special Topics in Engineering 630
+Special Topics in Engineering 631
+Special Topics in Engineering 632
+Special Topics in Engineering 633
+Special Topics in Engineering 634
+Special Topics in Engineering 635
+Special Topics in Engineering 636
+Special Topics in Engineering 637
+Special Topics in Engineering 638
+Special Topics in Engineering 639
+Special Topics in Engineering 64
+Special Topics in Engineering 640
+Special Topics in Engineering 641
+Special Topics in Engineering 642
+Special Topics in Engineering 643
+Special Topics in Engineering 644
+Special Topics in Engineering 645
+Special Topics in Engineering 646
+Special Topics in Engineering 647
+Special Topics in Engineering 648
+Special Topics in Engineering 649
+Special Topics in Engineering 65
+Special Topics in Engineering 650
+Special Topics in Engineering 651
+Special Topics in Engineering 652
+Special Topics in Engineering 653
+Special Topics in Engineering 654
+Special Topics in Engineering 655
+Special Topics in Engineering 656
+Special Topics in Engineering 657
+Special Topics in Engineering 658
+Special Topics in Engineering 659
+Special Topics in Engineering 66
+Special Topics in Engineering 660
+Special Topics in Engineering 661
+Special Topics in Engineering 662
+Special Topics in Engineering 663
+Special Topics in Engineering 664
+Special Topics in Engineering 665
+Special Topics in Engineering 666
+Special Topics in Engineering 667
+Special Topics in Engineering 668
+Special Topics in Engineering 669
+Special Topics in Engineering 67
+Special Topics in Engineering 670
+Special Topics in Engineering 671
+Special Topics in Engineering 672
+Special Topics in Engineering 673
+Special Topics in Engineering 674
+Special Topics in Engineering 675
+Special Topics in Engineering 676
+Special Topics in Engineering 677
+Special Topics in Engineering 678
+Special Topics in Engineering 679
+Special Topics in Engineering 68
+Special Topics in Engineering 680
+Special Topics in Engineering 681
+Special Topics in Engineering 682
+Special Topics in Engineering 683
+Special Topics in Engineering 684
+Special Topics in Engineering 685
+Special Topics in Engineering 686
+Special Topics in Engineering 687
+Special Topics in Engineering 688
+Special Topics in Engineering 689
+Special Topics in Engineering 69
+Special Topics in Engineering 690
+Special Topics in Engineering 691
+Special Topics in Engineering 7
+Special Topics in Engineering 70
+Special Topics in Engineering 71
+Special Topics in Engineering 72
+Special Topics in Engineering 73
+Special Topics in Engineering 74
+Special Topics in Engineering 75
+Special Topics in Engineering 76
+Special Topics in Engineering 77
+Special Topics in Engineering 78
+Special Topics in Engineering 79
+Special Topics in Engineering 8
+Special Topics in Engineering 80
+Special Topics in Engineering 81
+Special Topics in Engineering 82
+Special Topics in Engineering 83
+Special Topics in Engineering 84
+Special Topics in Engineering 85
+Special Topics in Engineering 86
+Special Topics in Engineering 87
+Special Topics in Engineering 88
+Special Topics in Engineering 89
+Special Topics in Engineering 9
+Special Topics in Engineering 90
+Special Topics in Engineering 91
+Special Topics in Engineering 92
+Special Topics in Engineering 93
+Special Topics in Engineering 94
+Special Topics in Engineering 95
+Special Topics in Engineering 96
+Special Topics in Engineering 97
+Special Topics in Engineering 98
+Special Topics in Engineering 99
+Statistical Mechanics
+Statistical Mechanics Lab
+Statistical Mechanics Laboratory
+Steel Structures
+Steel Structures Lab
+Steel Structures Laboratory
+Structural Analysis
+Structural Analysis Lab
+Structural Analysis Laboratory
+Structural Engineering
+Structural Engineering Lab
+Structural Engineering Laboratory
+Surveying
+Surveying Lab
+Surveying Laboratory
+Systems Advanced Data Structures
+Systems Algorithms
+Systems Analog Electronics
+Systems Antenna Theory
+Systems Anthropology
+Systems Artificial Intelligence
+Systems Auditing
+Systems Banking and Insurance
+Systems Basic Electrical Engineering
+Systems Basic Electronics Engineering
+Systems Biochemistry
+Systems Blockchain Technology
+Systems Business Analytics
+Systems Business Economics
+Systems Business Law
+Systems CAD CAM
+Systems Calculus for Engineers
+Systems Cell Biology
+Systems Classical Mechanics
+Systems Cloud Computing
+Systems Communication Systems
+Systems Communicative English
+Systems Compiler Design
+Systems Complex Analysis
+Systems Computer Architecture
+Systems Computer Networks
+Systems Computer Organization
+Systems Computer Vision
+Systems Concrete Technology
+Systems Construction Management
+Systems Control Systems
+Systems Corporate Accounting
+Systems Cost Accounting
+Systems Cryptography
+Systems Cyber Security
+Systems Data Structures
+Systems Database Management Systems
+Systems Deep Learning
+Systems Design and Analysis of Algorithms
+Systems Digital Electronics
+Systems Digital Signal Processing
+Systems Dynamics of Machines
+Systems Ecology
+Systems Electromagnetism
+Systems Embedded Systems
+Systems Engineering Chemistry
+Systems Engineering Graphics
+Systems Engineering Mathematics I
+Systems Engineering Mathematics II
+Systems Engineering Mechanics
+Systems Engineering Metallurgy
+Systems Engineering Physics
+Systems Engineering Workshop
+Systems English Literature
+Systems Environmental Engineering
+Systems Environmental Science
+Systems Ethical Hacking
+Systems Financial Accounting
+Systems Financial Management
+Systems Finite Element Analysis
+Systems Fluid Mechanics
+Systems Genetics
+Systems Geography
+Systems Geotechnical Engineering
+Systems Heat Transfer
+Systems Heritage of Tamils
+Systems History of India
+Systems Human Computer Interaction
+Systems Human Resource Management
+Systems Hydraulics
+Systems Hydrology
+Systems Income Tax
+Systems Industrial Engineering
+Systems Inorganic Chemistry
+Systems Internet of Things
+Systems Kinematics of Machines
+Systems Linear Algebra
+Systems Linguistics
+Systems Machine Design
+Systems Machine Learning
+Systems Management Accounting
+Systems Manufacturing Technology
+Systems Marketing Management
+Systems Mechanics of Materials
+Systems Microbiology
+Systems Microcontrollers
+Systems Microprocessors
+Systems Microwave Engineering
+Systems Mobile Application Development
+Systems Molecular Biology
+Systems Natural Language Processing
+Systems Operating Systems
+Systems Organic Chemistry
+Systems Philosophy
+Systems Physical Chemistry
+Systems Physics and Chemistry Laboratory
+Systems Political Science
+Systems Probability Statistics and Linear Algebra
+Systems Probability and Statistics
+Systems Problem Solving and Python Programming
+Systems Production Engineering
+Systems Professional English and Functional Skills
+Systems Programming Lab
+Systems Programming in C
+Systems Programming in Python
+Systems Psychology
+Systems Public Administration
+Systems Python Programming Laboratory
+Systems Quantum Mechanics
+Systems Real Analysis
+Systems Robotics
+Systems Signals and Systems
+Systems Sociology
+Systems Software Engineering
+Systems Soil Mechanics
+Systems Statistical Mechanics
+Systems Steel Structures
+Systems Structural Analysis
+Systems Structural Engineering
+Systems Surveying
+Systems Technical English
+Systems Thermal Physics
+Systems Thermodynamics
+Systems Transportation Engineering
+Systems Urban Planning
+Systems VLSI Design
+Systems Water Resources Engineering
+Systems Web Development
+Systems Web Technologies
+Systems Wireless Communication
+Systems World History
+Technical English
+Technical English Lab
+Technical English Laboratory
+Thermal Physics
+Thermal Physics Lab
+Thermal Physics Laboratory
+Thermodynamics
+Thermodynamics Lab
+Thermodynamics Laboratory
+Transportation Engineering
+Transportation Engineering Lab
+Transportation Engineering Laboratory
+Urban Planning
+Urban Planning Lab
+Urban Planning Laboratory
+VLSI Design
+VLSI Design Lab
+VLSI Design Laboratory
+Water Resources Engineering
+Water Resources Engineering Lab
+Water Resources Engineering Laboratory
+Web Development
+Web Development Lab
+Web Development Laboratory
+Web Technologies
+Web Technologies Lab
+Web Technologies Laboratory
+Wireless Communication
+Wireless Communication Lab
+Wireless Communication Laboratory
+World History
+World History Lab
+World History Laboratory

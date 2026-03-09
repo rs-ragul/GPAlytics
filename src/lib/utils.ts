@@ -11,18 +11,20 @@ export const GRADE_POINTS: Record<string, number> = {
   "A": 8,
   "B+": 7,
   "B": 6,
+  "C+": 5.5,
+  "C": 5,
 };
 
 // Valid grades that count towards GPA calculation
-export const VALID_GRADES = ["O", "A+", "A", "B+", "B"];
+export const VALID_GRADES = ["O", "A+", "A", "B+", "B", "C+", "C"];
 
 // Grades to ignore in GPA calculation
 export const IGNORE_GRADES = ["WH", "WD", "UA", "RA"];
 
 // All valid grade patterns for OCR detection
-export const VALID_GRADE_PATTERNS = ["O", "A+", "A", "B+", "B", "WH", "WD", "UA", "RA"];
+export const VALID_GRADE_PATTERNS = ["O", "A+", "A", "B+", "B", "C+", "C", "WH", "WD", "UA", "RA"];
 
-export const GRADES = ["O", "A+", "A", "B+", "B"];
+export const GRADES = ["O", "A+", "A", "B+", "B", "C+", "C"];
 
 // Subject credits mapping database
 export const SUBJECT_CREDITS: Record<string, number> = {

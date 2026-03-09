@@ -2,7 +2,6 @@
 
 import { useState, useCallback, useMemo } from "react";
 import { motion } from "framer-motion";
-import Tesseract from "tesseract.js";
 import { 
   Scan, 
   FileText, 
@@ -11,7 +10,11 @@ import {
   AlertCircle, 
   TrendingUp,
   Info,
-  Calculator
+  Calculator,
+  Edit2,
+  Trash2,
+  Plus,
+  RefreshCw
 } from "lucide-react";
 import { GlassCard } from "@/components/shared/GlassCard";
 import { UploadZone } from "@/components/features/UploadZone";
@@ -20,12 +23,14 @@ import {
   calculateGPA, 
   GRADE_POINTS, 
   VALID_GRADE_PATTERNS,
-  getSubjectCredits,
   VALID_GRADES,
   getGPAStatus
 } from "@/lib/utils";
+import { processOCR } from "@/lib/ocr/ocrService";
+import { getSubjectCredits } from "@/lib/ocr/subjectCredits";
 
 interface ExtractedSubject {
+  id: string;
   name: string;
   grade: string;
   credits: number;
@@ -41,51 +46,27 @@ interface GradeImpact {
   gpaImprovement: number;
 }
 
-// Words to trim from subject names
-const TRIM_WORDS = [
-  "semester", "course", "college", "register", "name", 
-  "subject", "code", "grade", "result", "examination",
-  "internal", "external", "total", "credits", "credit"
-];
-
-// Common non-subject patterns to filter out
-const NOISE_PATTERNS = [
-  /psna/i,
-  /nba/i,
-  /aicte/i,
-  /naac/i,
-  /university/i,
-  /institute/i,
-  /college/i,
-  /department/i,
-  /affiliated/i,
-  /autonomous/i,
-  /approved/i,
-  / accredited/i,
-  /session/i,
-  /roll no/i,
-  /register no/i,
-  /student/i,
-  /candidate/i,
-  /signature/i,
-  /date/i,
-  /page/i,
-  /contd/i,
-  /continued/i,
-];
+const GRADE_OPTIONS = ["O", "A+", "A", "B+", "B", "C+", "C", "WH", "WD", "UA", "RA"];
+const CREDIT_OPTIONS = [1, 2, 3, 4];
 
 export default function ScanPage() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [progress, setProgress] = useState(0);
   const [status, setStatus] = useState<"idle" | "processing" | "success" | "error">("idle");
-  const [extractedText, setExtractedText] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");
   const [extractedSubjects, setExtractedSubjects] = useState<ExtractedSubject[]>([]);
   const [error, setError] = useState("");
+  const [isEditing, setIsEditing] = useState(false);
+  const [warnings, setWarnings] = useState<string[]>([]);
 
   // Calculate GPA from extracted subjects
   const { calculatedGPA, totalCredits, totalGradePoints } = useMemo(() => {
     const validSubjects = extractedSubjects.filter(
-      (s) => s.grade && VALID_GRADES.includes(s.grade)
+      (s) =>
+        s.name.trim().length > 0 &&
+        s.credits > 0 &&
+        s.grade &&
+        VALID_GRADES.includes(s.grade)
     );
     
     const gpa = calculateGPA(validSubjects.map((s) => ({
@@ -111,7 +92,11 @@ export default function ScanPage() {
     
     const impacts: GradeImpact[] = [];
     const validSubjects = extractedSubjects.filter(
-      (s) => s.grade && VALID_GRADES.includes(s.grade)
+      (s) =>
+        s.name.trim().length > 0 &&
+        s.credits > 0 &&
+        s.grade &&
+        VALID_GRADES.includes(s.grade)
     );
     
     // Current total grade points
@@ -150,114 +135,54 @@ export default function ScanPage() {
     return impacts.sort((a, b) => b.gpaImprovement - a.gpaImprovement);
   }, [extractedSubjects, calculatedGPA]);
 
-  const parseExtractedText = (text: string): ExtractedSubject[] => {
-    const subjects: ExtractedSubject[] = [];
-    const lines = text.split("\n").filter((line) => line.trim());
-
-    // Build regex pattern for valid grades
-    const gradePattern = new RegExp(`\\b(${VALID_GRADE_PATTERNS.join("|")})\\b`, "i");
-    
-    // Find subject-grade pairs
-    for (const line of lines) {
-      const trimmedLine = line.trim();
-      
-      // Skip empty or very short lines
-      if (trimmedLine.length < 3) continue;
-      
-      // Check if line contains a valid grade pattern
-      const gradeMatch = trimmedLine.match(gradePattern);
-      
-      if (!gradeMatch) continue;
-      
-      // Check for noise patterns
-      const isNoise = NOISE_PATTERNS.some(pattern => pattern.test(trimmedLine));
-      if (isNoise) continue;
-      
-      const foundGrade = gradeMatch[1];
-      const gradeIndex = trimmedLine.indexOf(foundGrade);
-      
-      // Extract subject name (text before the grade)
-      let subjectName = trimmedLine.substring(0, gradeIndex).trim();
-      
-      // Also check for subject name after grade (some formats have grade first)
-      if (subjectName.length < 3) {
-        const afterGrade = trimmedLine.substring(gradeIndex + foundGrade.length).trim();
-        if (afterGrade.length > subjectName.length) {
-          subjectName = afterGrade;
-        }
-      }
-      
-      // Remove numbers and extra characters
-      subjectName = subjectName.replace(/[0-9]/g, "").replace(/[^a-zA-Z\s&]/g, "").trim();
-      
-      // Trim unnecessary words
-      for (const word of TRIM_WORDS) {
-        const wordPattern = new RegExp(`\\b${word}\\b`, "gi");
-        subjectName = subjectName.replace(wordPattern, "").trim();
-      }
-      
-      // Capitalize first letter of each word
-      subjectName = subjectName
-        .split(" ")
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-        .join(" ")
-        .trim();
-
-      // Get credits using the mapping
-      const credits = getSubjectCredits(subjectName);
-
-      if (subjectName.length > 2) {
-        subjects.push({
-          name: subjectName,
-          grade: foundGrade.toUpperCase(),
-          credits,
-          confidence: 0.8,
-        });
-      }
-    }
-
-    return subjects;
-  };
-
+  // Process image with new OCR pipeline
   const processImage = useCallback(async (file: File) => {
     setIsProcessing(true);
     setProgress(0);
     setStatus("processing");
     setError("");
+    setWarnings([]);
     setExtractedSubjects([]);
+    setIsEditing(false);
 
     try {
-      const result = await Tesseract.recognize(file, "eng", {
-        logger: (m) => {
-          if (m.status === "recognizing text") {
-            setProgress(m.progress * 100);
-          }
-        },
+      const result = await processOCR(file, {
+        preprocessImage: true,
+        useAdvancedParsing: true,
+        onProgress: (progress) => {
+          setProgress(progress.progress);
+          setStatusMessage(progress.status);
+        }
       });
 
-      const text = result.data.text;
-      setExtractedText(text);
+      // Convert parsed subjects to editable format
+      const subjects: ExtractedSubject[] = result.subjects.map((s, index) => ({
+        id: `subject-${Date.now()}-${index}`,
+        name: s.name,
+        grade: s.grade,
+        credits: s.credits,
+        confidence: s.confidence
+      }));
 
-      // Parse the extracted text
-      const subjects = parseExtractedText(text);
-      
       if (subjects.length === 0) {
-        setStatus("error");
-        setError("Could not detect any subjects. Please try a clearer image.");
+        setExtractedSubjects([
+          { id: `subject-${Date.now()}-0`, name: "", grade: "", credits: 3, confidence: 0 },
+          { id: `subject-${Date.now()}-1`, name: "", grade: "", credits: 3, confidence: 0 },
+        ]);
+        setWarnings([
+          "OCR could not confidently detect subject rows from this image.",
+          "Please fill/edit the table manually and continue.",
+          ...result.warnings,
+        ]);
+        setStatus("success");
+        setIsEditing(true);
         return;
       }
 
-      // Filter valid grades only
-      const validSubjects = subjects.filter((s) => VALID_GRADES.includes(s.grade));
-
-      if (validSubjects.length === 0) {
-        setStatus("error");
-        setError("Could not detect valid grades (O, A+, A, B+, B). Please try a clearer image.");
-        return;
-      }
-
-      setExtractedSubjects(validSubjects);
+      setExtractedSubjects(subjects);
+      setWarnings(result.warnings);
       setStatus("success");
+      setIsEditing(true); // Start in edit mode for user verification
     } catch (err) {
       console.error("OCR Error:", err);
       setStatus("error");
@@ -267,12 +192,52 @@ export default function ScanPage() {
     }
   }, []);
 
+  // Add new subject row
+  const addSubject = useCallback(() => {
+    const newSubject: ExtractedSubject = {
+      id: `subject-${Date.now()}`,
+      name: "",
+      grade: "",
+      credits: 3,
+      confidence: 0
+    };
+    setExtractedSubjects([...extractedSubjects, newSubject]);
+    setIsEditing(true);
+  }, [extractedSubjects]);
+
+  // Update subject field
+  const updateSubject = useCallback((id: string, field: keyof ExtractedSubject, value: string | number) => {
+    setExtractedSubjects(prev => 
+      prev.map(s => {
+        if (s.id === id) {
+          const updated = { ...s, [field]: value };
+          // Auto-update credits when name changes
+          if (field === 'name' && typeof value === 'string') {
+            updated.credits = getSubjectCredits(value);
+          }
+          return updated;
+        }
+        return s;
+      })
+    );
+  }, []);
+
+  // Remove subject
+  const removeSubject = useCallback((id: string) => {
+    setExtractedSubjects(prev => prev.filter(s => s.id !== id));
+  }, []);
+
   // Get GPA status
   const gpaStatus = getGPAStatus(calculatedGPA);
 
+  // Get unique warnings
+  const uniqueWarnings = useMemo(() => {
+    return [...new Set(warnings)];
+  }, [warnings]);
+
   return (
     <div className="min-h-screen py-8 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         {/* Header */}
         <motion.div
           className="text-center mb-12"
@@ -283,7 +248,7 @@ export default function ScanPage() {
             Result <span className="gradient-text">Scanner</span>
           </h1>
           <p className="text-muted-foreground text-lg">
-            Upload a screenshot of your results and let AI extract your grades
+            Upload a screenshot of your results and auto-extract your grades
           </p>
         </motion.div>
 
@@ -299,6 +264,11 @@ export default function ScanPage() {
             progress={progress}
             status={status}
           />
+          {status === "processing" && statusMessage && (
+            <p className="text-sm text-muted-foreground mt-2 text-center">
+              Analyzing result screenshot...
+            </p>
+          )}
         </GlassCard>
 
         {/* Results */}
@@ -318,7 +288,7 @@ export default function ScanPage() {
                   <div>
                     <h3 className="text-lg font-semibold">Performance Status</h3>
                     <p className="text-sm text-muted-foreground">
-                      Based on {extractedSubjects.length} subjects
+                      Based on {extractedSubjects.filter(s => s.name.trim().length > 0 && s.credits > 0 && VALID_GRADES.includes(s.grade)).length} subjects
                     </p>
                   </div>
                 </div>
@@ -361,57 +331,173 @@ export default function ScanPage() {
               </div>
             </GlassCard>
 
-            {/* Section 3: Detected Subjects */}
+            {/* Section 3: Manual Correction UI */}
             <GlassCard className="mb-6">
-              <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                <FileText className="w-5 h-5 text-primary" />
-                Detected Subjects
-              </h3>
-              <div className="space-y-3">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-lg font-semibold flex items-center gap-2">
+                  <FileText className="w-5 h-5 text-primary" />
+                  Manual Correction Table
+                  {isEditing && (
+                    <span className="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">
+                      Edit Mode
+                    </span>
+                  )}
+                </h3>
+                <div className="flex gap-2">
+                  {!isEditing ? (
+                    <button
+                      onClick={() => setIsEditing(true)}
+                      className="flex items-center gap-1 px-3 py-1.5 text-sm bg-primary/20 text-primary rounded-lg hover:bg-primary/30 transition-colors"
+                    >
+                      <Edit2 className="w-4 h-4" />
+                      Edit
+                    </button>
+                  ) : (
+                    <>
+                      <button
+                        onClick={() => setIsEditing(false)}
+                        className="flex items-center gap-1 px-3 py-1.5 text-sm bg-success/20 text-success rounded-lg hover:bg-success/30 transition-colors"
+                      >
+                        <CheckCircle className="w-4 h-4" />
+                        Done
+                      </button>
+                      <button
+                        onClick={addSubject}
+                        className="flex items-center gap-1 px-3 py-1.5 text-sm bg-primary/20 text-primary rounded-lg hover:bg-primary/30 transition-colors"
+                      >
+                        <Plus className="w-4 h-4" />
+                        Add Subject
+                      </button>
+                    </>
+                  )}
+                </div>
+              </div>
+
+              {/* Warnings */}
+              {uniqueWarnings.length > 0 && isEditing && (
+                <div className="mb-4 p-3 bg-warning/10 border border-warning/30 rounded-lg">
+                  <p className="text-sm text-warning font-medium mb-1">Attention:</p>
+                  <ul className="text-xs text-muted-foreground space-y-1">
+                    {uniqueWarnings.slice(0, 5).map((warning, i) => (
+                      <li key={i}>• {warning}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Subject Table */}
+              <div className="space-y-2">
+                {/* Table Header */}
+                <div className="grid grid-cols-12 gap-2 px-4 py-2 text-sm font-medium text-muted-foreground bg-white/5 rounded-lg">
+                  <div className="col-span-5">Subject</div>
+                  <div className="col-span-3">Credits</div>
+                  <div className="col-span-3">Grade</div>
+                  <div className="col-span-1"></div>
+                </div>
+
+                {/* Subject Rows */}
                 {extractedSubjects.map((subject, index) => (
                   <motion.div
-                    key={index}
-                    className="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/5"
+                    key={subject.id}
+                    className="grid grid-cols-12 gap-2 px-4 py-3 rounded-xl bg-white/5 border border-white/5 items-center"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
+                    transition={{ delay: index * 0.05 }}
                   >
-                    <div className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-success" />
-                      <div>
-                        <div className="font-medium">{subject.name}</div>
-                        <div className="text-sm text-muted-foreground">
+                    {isEditing ? (
+                      // Edit Mode
+                      <>
+                        <div className="col-span-5">
+                          <input
+                            type="text"
+                            value={subject.name}
+                            onChange={(e) => updateSubject(subject.id, 'name', e.target.value)}
+                            placeholder="Subject name"
+                            className="w-full px-3 py-2 bg-white/10 border border-white/10 rounded-lg text-sm focus:outline-none focus:border-primary/50"
+                          />
+                        </div>
+                        <div className="col-span-3">
+                          <select
+                            value={subject.credits}
+                            onChange={(e) => updateSubject(subject.id, 'credits', parseInt(e.target.value))}
+                            className="w-full px-3 py-2 bg-white/10 border border-white/10 rounded-lg text-sm focus:outline-none focus:border-primary/50"
+                          >
+                            {CREDIT_OPTIONS.map(c => (
+                              <option key={c} value={c}>{c}</option>
+                            ))}
+                          </select>
+                        </div>
+                        <div className="col-span-3">
+                          <select
+                            value={subject.grade}
+                            onChange={(e) => updateSubject(subject.id, 'grade', e.target.value)}
+                            className={`w-full px-3 py-2 rounded-lg text-sm focus:outline-none ${
+                              !subject.grade || VALID_GRADE_PATTERNS.includes(subject.grade)
+                                ? 'bg-white/10 border border-white/10' 
+                                : 'bg-warning/20 border border-warning/50'
+                            }`}
+                          >
+                            <option value="">Select</option>
+                            {GRADE_OPTIONS.map(g => (
+                              <option key={g} value={g}>{g}</option>
+                            ))}
+                          </select>
+                        </div>
+                        <div className="col-span-1 flex justify-end">
+                          <button
+                            onClick={() => removeSubject(subject.id)}
+                            className="p-2 text-error hover:bg-error/20 rounded-lg transition-colors"
+                          >
+                            <Trash2 className="w-4 h-4" />
+                          </button>
+                        </div>
+                      </>
+                    ) : (
+                      // View Mode
+                      <>
+                        <div className="col-span-5 flex items-center gap-3">
+                          <CheckCircle className={`w-5 h-5 ${subject.grade && VALID_GRADE_PATTERNS.includes(subject.grade) ? 'text-success' : 'text-warning'}`} />
+                          <div>
+                            <div className="font-medium">{subject.name || "Unknown"}</div>
+                            {subject.confidence > 0 && (
+                              <div className="text-xs text-muted-foreground">
+                                {Math.round(subject.confidence * 100)}% confidence
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                        <div className="col-span-3 text-muted-foreground">
                           {subject.credits} credits
                         </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span
-                        className={`px-3 py-1 rounded-lg font-bold ${
-                          subject.grade === "O"
-                            ? "bg-success/20 text-success"
-                            : subject.grade === "A+"
-                            ? "bg-green-500/20 text-green-400"
-                            : subject.grade === "A"
-                            ? "bg-primary/20 text-primary"
-                            : subject.grade === "B+"
-                            ? "bg-warning/20 text-warning"
-                            : "bg-orange-500/20 text-orange-400"
-                        }`}
-                      >
-                        {subject.grade}
-                      </span>
-                      <span className="text-muted-foreground">
-                        ({GRADE_POINTS[subject.grade]})
-                      </span>
-                    </div>
+                        <div className="col-span-3">
+                          <span
+                            className={`px-3 py-1 rounded-lg font-bold ${
+                              subject.grade === "O"
+                                ? "bg-success/20 text-success"
+                                : subject.grade === "A+"
+                                ? "bg-green-500/20 text-green-400"
+                                : subject.grade === "A"
+                                ? "bg-primary/20 text-primary"
+                                : subject.grade === "B+"
+                                ? "bg-warning/20 text-warning"
+                                : subject.grade === "B"
+                                ? "bg-orange-500/20 text-orange-400"
+                                : "bg-white/10 text-muted-foreground"
+                            }`}
+                          >
+                            {subject.grade || "-"}
+                          </span>
+                        </div>
+                        <div className="col-span-1"></div>
+                      </>
+                    )}
                   </motion.div>
                 ))}
               </div>
             </GlassCard>
 
             {/* Section 4: GPA Impact Analyzer */}
-            {gradeImpacts.length > 0 && (
+            {gradeImpacts.length > 0 && !isEditing && (
               <GlassCard className="mb-6">
                 <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                   <TrendingUp className="w-5 h-5 text-primary" />
@@ -486,11 +572,15 @@ export default function ScanPage() {
             </li>
             <li className="flex items-start gap-2">
               <CheckCircle className="w-4 h-4 text-success mt-1 flex-shrink-0" />
-              Include the grade scale in the image if possible
+              Include the grade column in the image
             </li>
             <li className="flex items-start gap-2">
               <CheckCircle className="w-4 h-4 text-success mt-1 flex-shrink-0" />
               Avoid shadows and glare on the image
+            </li>
+            <li className="flex items-start gap-2">
+              <RefreshCw className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+              Review and edit detected subjects for accuracy
             </li>
           </ul>
         </GlassCard>

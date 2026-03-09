@@ -1,0 +1,800 @@
+Advanced Advanced Materials
+Advanced Aerodynamics
+Advanced Aircraft Design
+Advanced Aircraft Structures
+Advanced Analog Communication
+Advanced Automation Systems
+Advanced Automotive Engineering
+Advanced Avionics
+Advanced Basic Electrical Engineering
+Advanced Bioinformatics
+Advanced Biomechanics
+Advanced Biomedical Engineering
+Advanced Biomedical Instrumentation
+Advanced Blockchain Technology
+Advanced Bridge Engineering
+Advanced Calculus Analysis
+Advanced Calculus Systems
+Advanced Calculus Technologies
+Advanced Ceramic Engineering
+Advanced Complex Analysis
+Advanced Composite Materials
+Advanced Computer Organization
+Advanced Concrete Technology
+Advanced Control Systems
+Advanced Corrosion Engineering
+Advanced Cyber Security
+Advanced Data Structures
+Advanced Data Structures Applications
+Advanced Differential Equations
+Advanced Digital Electronics
+Advanced Discrete Mathematics
+Advanced Electric Drives
+Advanced Electrical Machines
+Advanced Embedded Systems
+Advanced Engineering Chemistry
+Advanced Engineering Physics
+Advanced Environmental Engineering
+Advanced Environmental Science
+Advanced Flight Mechanics
+Advanced Fluid Mechanics
+Advanced Gas Dynamics
+Advanced Genetic Engineering
+Advanced Heat Transfer
+Advanced High Voltage Engineering
+Advanced Highway Engineering
+Advanced Hybrid Electric Vehicles
+Advanced Hydrology
+Advanced Industrial Engineering
+Advanced Innovation and Design Thinking
+Advanced Internship
+Advanced Linear Algebra
+Advanced Machine Design
+Advanced Materials
+Advanced Materials Analysis
+Advanced Materials Applications
+Advanced Materials Design
+Advanced Materials Fundamentals
+Advanced Materials Laboratory
+Advanced Materials Science
+Advanced Materials Systems
+Advanced Medical Imaging
+Advanced Metallurgical Engineering
+Advanced Mobile Application Development
+Advanced Nanotechnology
+Advanced Natural Language Processing
+Advanced Neural Engineering
+Advanced Object Oriented Programming
+Advanced Optimization Techniques
+Advanced Power Plant Engineering
+Advanced Power System Protection
+Advanced Programming in C++
+Advanced Project Management
+Advanced Propulsion Systems
+Advanced Robotics Electronics
+Advanced Rocket Propulsion
+Advanced Seminar
+Advanced Sensor Technology
+Advanced Signals and Systems
+Advanced Smart Grid Technology
+Advanced Space Technology
+Advanced Structural Analysis
+Advanced Structural Engineering
+Advanced Surface Engineering
+Advanced Surveying
+Advanced Thermodynamics
+Advanced Transmission and Distribution
+Advanced Urban Planning
+Advanced Wastewater Engineering
+Advanced Water Resources Engineering
+Advanced Wireless Communication
+Aerodynamics
+Aerodynamics Applications
+Aerodynamics Design
+Aerodynamics Fundamentals
+Aerodynamics Lab
+Aerodynamics Systems
+Aerodynamics Technologies
+Aerospace Materials Analysis
+Aerospace Materials Fundamentals
+Aerospace Materials Lab
+Aerospace Materials Laboratory
+Aerospace Materials Technologies
+Aircraft Design
+Aircraft Design Applications
+Aircraft Design Design
+Aircraft Design Lab
+Aircraft Design Laboratory
+Aircraft Design Systems
+Aircraft Structures
+Aircraft Structures Analysis
+Aircraft Structures Applications
+Aircraft Structures Design
+Aircraft Structures Fundamentals
+Algorithms Systems
+Analog Communication
+Analog Communication Analysis
+Analog Communication Applications
+Analog Communication Laboratory
+Analog Electronics Analysis
+Analog Electronics Fundamentals
+Analog Electronics Laboratory
+Antenna Theory Fundamentals
+Antenna Theory Systems
+Antenna Theory Technologies
+Artificial Intelligence Fundamentals
+Automation Systems
+Automation Systems Analysis
+Automation Systems Applications
+Automation Systems Lab
+Automation Systems Systems
+Automotive Engineering Analysis
+Automotive Engineering Design
+Automotive Engineering Systems
+Automotive Engineering Technologies
+Avionics
+Avionics Design
+Avionics Fundamentals
+Avionics Lab
+Avionics Systems
+Avionics Technologies
+Basic Electrical Engineering
+Basic Electrical Engineering Analysis
+Basic Electrical Engineering Applications
+Basic Electrical Engineering Systems
+Basic Electrical Engineering Technologies
+Big Data Analytics Lab
+Bioinformatics
+Bioinformatics Lab
+Bioinformatics Laboratory
+Bioinformatics Systems
+Bioinformatics Technologies
+Biomaterials Analysis
+Biomaterials Applications
+Biomaterials Fundamentals
+Biomaterials Lab
+Biomaterials Laboratory
+Biomaterials Systems
+Biomaterials Technologies
+Biomechanics Applications
+Biomechanics Design
+Biomechanics Fundamentals
+Biomechanics Laboratory
+Biomechanics Systems
+Biomedical Electronics Design
+Biomedical Electronics Fundamentals
+Biomedical Electronics Technologies
+Biomedical Engineering
+Biomedical Engineering Analysis
+Biomedical Engineering Fundamentals
+Biomedical Engineering Laboratory
+Biomedical Engineering Systems
+Biomedical Engineering Technologies
+Biomedical Instrumentation
+Biomedical Instrumentation Analysis
+Biomedical Instrumentation Applications
+Biomedical Instrumentation Design
+Biomedical Instrumentation Fundamentals
+Biomedical Instrumentation Laboratory
+Biomedical Instrumentation Technologies
+Bioprocess Engineering
+Bioprocess Engineering Analysis
+Bioprocess Engineering Applications
+Bioprocess Engineering Design
+Bioprocess Engineering Fundamentals
+Blockchain Technology Fundamentals
+Blockchain Technology Lab
+Bridge Engineering
+Bridge Engineering Analysis
+Bridge Engineering Design
+Bridge Engineering Systems
+CAD CAM Applications
+CAD CAM Design
+CAD CAM Technologies
+Ceramic Engineering Analysis
+Ceramic Engineering Applications
+Ceramic Engineering Fundamentals
+Ceramic Engineering Lab
+Ceramic Engineering Laboratory
+Ceramic Engineering Systems
+Ceramic Engineering Technologies
+Cloud Computing
+Cloud Computing Applications
+Compiler Design
+Compiler Design Fundamentals
+Compiler Design Laboratory
+Complex Analysis Fundamentals
+Complex Analysis Laboratory
+Complex Analysis Systems
+Composite Materials
+Composite Materials Applications
+Composite Materials Design
+Composite Materials Fundamentals
+Composite Materials Lab
+Composite Materials Systems
+Composite Materials Technologies
+Computer Architecture
+Computer Architecture Fundamentals
+Computer Architecture Systems
+Computer Networks Analysis
+Computer Networks Design
+Computer Networks Lab
+Computer Networks Laboratory
+Computer Networks Systems
+Computer Networks Technologies
+Computer Organization Applications
+Computer Organization Lab
+Computer Vision Laboratory
+Concrete Technology Analysis
+Concrete Technology Applications
+Concrete Technology Fundamentals
+Concrete Technology Lab
+Concrete Technology Laboratory
+Concrete Technology Systems
+Construction Management Systems
+Construction Management Technologies
+Control Engineering Analysis
+Control Engineering Design
+Control Engineering Laboratory
+Control Engineering Technologies
+Control Systems Applications
+Control Systems Design
+Control Systems Laboratory
+Corrosion Engineering Analysis
+Corrosion Engineering Applications
+Corrosion Engineering Design
+Corrosion Engineering Fundamentals
+Corrosion Engineering Lab
+Corrosion Engineering Laboratory
+Corrosion Engineering Systems
+Corrosion Engineering Technologies
+Cryptography Analysis
+Cryptography Laboratory
+Cyber Security
+Cyber Security Analysis
+Cyber Security Design
+Cyber Security Fundamentals
+Cyber Security Technologies
+Data Mining Lab
+Data Mining Laboratory
+Data Mining Technologies
+Data Structures Design
+Data Structures Systems
+Data Structures Technologies
+Database Management Systems Analysis
+Database Management Systems Fundamentals
+Database Management Systems Systems
+Deep Learning Design
+Deep Learning Laboratory
+Deep Learning Systems
+Design and Analysis of Algorithms Analysis
+Design and Analysis of Algorithms Applications
+Design and Analysis of Algorithms Fundamentals
+Design and Analysis of Algorithms Systems
+Design and Analysis of Algorithms Technologies
+DevOps Fundamentals
+DevOps Lab
+DevOps Technologies
+Differential Equations Analysis
+Differential Equations Applications
+Differential Equations Design
+Differential Equations Technologies
+Digital Electronics
+Digital Electronics Analysis
+Digital Electronics Lab
+Digital Electronics Systems
+Digital Electronics Technologies
+Digital Signal Processing Analysis
+Digital Signal Processing Applications
+Digital Signal Processing Design
+Digital Signal Processing Laboratory
+Digital Signal Processing Systems
+Discrete Mathematics
+Discrete Mathematics Analysis
+Discrete Mathematics Design
+Discrete Mathematics Lab
+Discrete Mathematics Systems
+Distributed Systems Analysis
+Distributed Systems Design
+Distributed Systems Laboratory
+Distributed Systems Systems
+Dynamics of Machines
+Dynamics of Machines Design
+Dynamics of Machines Lab
+Dynamics of Machines Systems
+Earthquake Engineering
+Earthquake Engineering Analysis
+Earthquake Engineering Fundamentals
+Earthquake Engineering Laboratory
+Earthquake Engineering Systems
+Earthquake Engineering Technologies
+Electric Drives
+Electric Drives Applications
+Electric Drives Fundamentals
+Electric Drives Technologies
+Electric Vehicles Design
+Electric Vehicles Fundamentals
+Electric Vehicles Systems
+Electric Vehicles Technologies
+Electrical Machines Applications
+Electrical Machines Design
+Electrical Machines Lab
+Electrical Machines Laboratory
+Electrical Machines Systems
+Electrical Measurements Analysis
+Electrical Measurements Applications
+Electrical Measurements Design
+Electrical Measurements Fundamentals
+Electrical Measurements Lab
+Electrical Measurements Technologies
+Electronic Devices Fundamentals
+Electronic Devices Systems
+Electronic Devices Technologies
+Electronic Instrumentation
+Electronic Instrumentation Design
+Electronic Instrumentation Lab
+Electronic Instrumentation Technologies
+Embedded Systems Analysis
+Energy Conversion Technologies
+Engineering Chemistry Applications
+Engineering Chemistry Laboratory
+Engineering Chemistry Technologies
+Engineering Economics Applications
+Engineering Economics Lab
+Engineering Economics Laboratory
+Engineering Economics Systems
+Engineering Ethics Design
+Engineering Graphics
+Engineering Graphics Laboratory
+Engineering Materials Laboratory
+Engineering Mathematics
+Engineering Mathematics Laboratory
+Engineering Mathematics Systems
+Engineering Mechanics Applications
+Engineering Mechanics Lab
+Engineering Metallurgy
+Engineering Metallurgy Analysis
+Engineering Metallurgy Applications
+Engineering Metallurgy Design
+Engineering Metallurgy Fundamentals
+Engineering Metallurgy Lab
+Engineering Metallurgy Systems
+Engineering Metallurgy Technologies
+Engineering Physics Applications
+Engineering Physics Laboratory
+Engineering Physics Systems
+Entrepreneurship Fundamentals
+Entrepreneurship Lab
+Entrepreneurship Technologies
+Environmental Engineering
+Environmental Engineering Fundamentals
+Environmental Engineering Lab
+Environmental Engineering Laboratory
+Environmental Engineering Systems
+Environmental Science
+Environmental Science Analysis
+Environmental Science Applications
+Environmental Science Design
+Environmental Science Fundamentals
+Ethical Hacking
+Ethical Hacking Analysis
+Ethical Hacking Applications
+Ethical Hacking Systems
+FPGA Design Analysis
+FPGA Design Applications
+FPGA Design Design
+FPGA Design Lab
+FPGA Design Systems
+FPGA Design Technologies
+Finite Element Analysis
+Finite Element Analysis Analysis
+Finite Element Analysis Applications
+Finite Element Analysis Fundamentals
+Finite Element Analysis Lab
+Finite Element Analysis Laboratory
+Finite Element Analysis Systems
+Flight Mechanics
+Flight Mechanics Analysis
+Flight Mechanics Design
+Flight Mechanics Fundamentals
+Flight Mechanics Laboratory
+Fluid Mechanics
+Fluid Mechanics Fundamentals
+Gas Dynamics Applications
+Gas Dynamics Lab
+Gas Dynamics Laboratory
+Gas Dynamics Systems
+Gas Dynamics Technologies
+Genetic Engineering
+Genetic Engineering Analysis
+Genetic Engineering Applications
+Genetic Engineering Design
+Genetic Engineering Fundamentals
+Genetic Engineering Systems
+Genetic Engineering Technologies
+Geotechnical Engineering
+Geotechnical Engineering Analysis
+Geotechnical Engineering Applications
+Geotechnical Engineering Design
+Geotechnical Engineering Fundamentals
+Geotechnical Engineering Lab
+Geotechnical Engineering Laboratory
+Geotechnical Engineering Systems
+High Voltage Engineering
+High Voltage Engineering Design
+High Voltage Engineering Fundamentals
+High Voltage Engineering Systems
+High Voltage Engineering Technologies
+Highway Engineering
+Highway Engineering Fundamentals
+Highway Engineering Laboratory
+Human Computer Interaction Analysis
+Human Computer Interaction Fundamentals
+Human Computer Interaction Technologies
+Hybrid Electric Vehicles Analysis
+Hybrid Electric Vehicles Fundamentals
+Hybrid Electric Vehicles Laboratory
+Hybrid Electric Vehicles Systems
+Hydraulics Analysis
+Hydraulics Applications
+Hydraulics Design
+Hydraulics Laboratory
+Hydrology
+Hydrology Analysis
+Hydrology Fundamentals
+Hydrology Systems
+Hydrology Technologies
+Industrial Automation Applications
+Industrial Automation Design
+Industrial Automation Systems
+Industrial Engineering
+Industrial Engineering Fundamentals
+Industrial Engineering Lab
+Industrial Engineering Laboratory
+Industrial Engineering Systems
+Industrial Engineering Technologies
+Industrial Training Design
+Industrial Training Laboratory
+Industrial Training Systems
+Information Retrieval Lab
+Innovation and Design Thinking Analysis
+Innovation and Design Thinking Design
+Innovation and Design Thinking Lab
+Internet of Things Fundamentals
+Internet of Things Lab
+Internship
+Internship Applications
+Internship Design
+Internship Fundamentals
+Internship Lab
+Internship Laboratory
+Internship Technologies
+Java Programming Applications
+Java Programming Fundamentals
+Java Programming Technologies
+Kinematics of Machines Analysis
+Kinematics of Machines Design
+Kinematics of Machines Lab
+Kinematics of Machines Laboratory
+Linear Algebra Applications
+Linear Algebra Fundamentals
+Linear Algebra Lab
+Linear Algebra Laboratory
+Machine Design
+Machine Design Lab
+Machine Design Laboratory
+Machine Design Systems
+Machine Learning Design
+Machine Learning Lab
+Machine Learning Laboratory
+Major Project
+Major Project Design
+Major Project Fundamentals
+Major Project Laboratory
+Manufacturing Technology Analysis
+Manufacturing Technology Design
+Manufacturing Technology Fundamentals
+Manufacturing Technology Lab
+Manufacturing Technology Systems
+Manufacturing Technology Technologies
+Materials Science
+Materials Science Applications
+Materials Science Laboratory
+Materials Science Technologies
+Mechanics of Materials Laboratory
+Mechanics of Materials Systems
+Mechanics of Materials Technologies
+Mechatronics
+Mechatronics Fundamentals
+Mechatronics Lab
+Mechatronics Laboratory
+Mechatronics Systems
+Mechatronics Technologies
+Medical Imaging
+Medical Imaging Applications
+Medical Imaging Fundamentals
+Medical Imaging Laboratory
+Medical Imaging Technologies
+Metallurgical Engineering Analysis
+Metallurgical Engineering Applications
+Metallurgical Engineering Design
+Metallurgical Engineering Lab
+Metallurgical Engineering Laboratory
+Metallurgical Engineering Systems
+Microcontrollers Applications
+Microcontrollers Design
+Microcontrollers Lab
+Microcontrollers Systems
+Microprocessors Fundamentals
+Microwave Engineering
+Microwave Engineering Lab
+Microwave Engineering Systems
+Mini Project Technologies
+Mobile Application Development Lab
+Mobile Application Development Systems
+Nanotechnology
+Nanotechnology Analysis
+Nanotechnology Applications
+Nanotechnology Fundamentals
+Nanotechnology Lab
+Nanotechnology Technologies
+Natural Language Processing
+Natural Language Processing Analysis
+Natural Language Processing Systems
+Network Security
+Network Security Fundamentals
+Network Security Laboratory
+Neural Engineering Analysis
+Neural Engineering Fundamentals
+Neural Engineering Lab
+Neural Engineering Systems
+Numerical Methods Design
+Numerical Methods Technologies
+Object Oriented Programming
+Object Oriented Programming Applications
+Object Oriented Programming Lab
+Object Oriented Programming Technologies
+Operating Systems
+Operating Systems Fundamentals
+Operating Systems Technologies
+Operations Research
+Operations Research Applications
+Operations Research Fundamentals
+Operations Research Lab
+Operations Research Laboratory
+Operations Research Systems
+Operations Research Technologies
+Optical Communication
+Optical Communication Applications
+Optical Communication Design
+Optical Communication Fundamentals
+Optical Communication Lab
+Optical Communication Laboratory
+Optical Communication Technologies
+Optimization Techniques
+Optimization Techniques Applications
+Optimization Techniques Fundamentals
+Optimization Techniques Lab
+Optimization Techniques Technologies
+Parallel Computing
+Parallel Computing Fundamentals
+Parallel Computing Systems
+Polymer Engineering
+Polymer Engineering Analysis
+Polymer Engineering Applications
+Polymer Engineering Design
+Polymer Engineering Fundamentals
+Polymer Engineering Lab
+Polymer Engineering Laboratory
+Power Electronics Applications
+Power Electronics Design
+Power Electronics Fundamentals
+Power Electronics Lab
+Power Electronics Laboratory
+Power Electronics Systems
+Power Electronics Technologies
+Power Plant Engineering
+Power Plant Engineering Analysis
+Power Plant Engineering Lab
+Power Plant Engineering Systems
+Power System Protection
+Power System Protection Analysis
+Power System Protection Design
+Power System Protection Fundamentals
+Power System Protection Lab
+Power System Protection Laboratory
+Power System Protection Systems
+Power System Protection Technologies
+Power Systems Design
+Power Systems Fundamentals
+Power Systems Lab
+Power Systems Technologies
+Probability Theory
+Probability Theory Applications
+Production Engineering
+Production Engineering Applications
+Production Engineering Lab
+Production Engineering Laboratory
+Production Engineering Technologies
+Professional English Analysis
+Professional English Design
+Professional English Systems
+Programming in C Analysis
+Programming in C Lab
+Programming in C++ Lab
+Project Management
+Project Management Applications
+Project Management Laboratory
+Project Management Technologies
+Propulsion Systems Analysis
+Propulsion Systems Applications
+Propulsion Systems Design
+Propulsion Systems Laboratory
+Python Programming
+Python Programming Applications
+Python Programming Lab
+Radar Systems
+Radar Systems Applications
+Radar Systems Fundamentals
+Radar Systems Laboratory
+Radar Systems Technologies
+Refrigeration and Air Conditioning Analysis
+Refrigeration and Air Conditioning Applications
+Refrigeration and Air Conditioning Fundamentals
+Refrigeration and Air Conditioning Lab
+Refrigeration and Air Conditioning Laboratory
+Refrigeration and Air Conditioning Systems
+Refrigeration and Air Conditioning Technologies
+Renewable Energy Systems Design
+Renewable Energy Systems Fundamentals
+Renewable Energy Systems Systems
+Renewable Energy Systems Technologies
+Research Methodology
+Research Methodology Laboratory
+Robotics
+Robotics Design
+Robotics Electronics Design
+Robotics Electronics Fundamentals
+Robotics Electronics Lab
+Robotics Electronics Systems
+Robotics Fundamentals
+Robotics Systems
+Robotics Technologies
+Rocket Propulsion
+Rocket Propulsion Analysis
+Rocket Propulsion Fundamentals
+Rocket Propulsion Lab
+Rocket Propulsion Laboratory
+Rocket Propulsion Systems
+Rocket Propulsion Technologies
+Satellite Communication
+Satellite Communication Applications
+Satellite Communication Lab
+Satellite Communication Systems
+Satellite Communication Technologies
+Seminar Design
+Seminar Fundamentals
+Seminar Systems
+Seminar Technologies
+Signals and Systems Design
+Signals and Systems Lab
+Signals and Systems Laboratory
+Smart Grid Technology
+Smart Grid Technology Analysis
+Smart Grid Technology Applications
+Smart Grid Technology Fundamentals
+Smart Grid Technology Lab
+Software Engineering
+Software Engineering Laboratory
+Software Engineering Technologies
+Software Testing
+Software Testing Analysis
+Software Testing Lab
+Software Testing Technologies
+Soil Mechanics
+Soil Mechanics Applications
+Soil Mechanics Fundamentals
+Soil Mechanics Lab
+Soil Mechanics Laboratory
+Soil Mechanics Systems
+Space Technology Analysis
+Space Technology Applications
+Space Technology Design
+Space Technology Fundamentals
+Space Technology Laboratory
+Space Technology Technologies
+Statistics for Engineers Analysis
+Statistics for Engineers Design
+Statistics for Engineers Fundamentals
+Statistics for Engineers Laboratory
+Statistics for Engineers Systems
+Steel Structures Fundamentals
+Steel Structures Technologies
+Structural Analysis Applications
+Structural Analysis Fundamentals
+Structural Analysis Lab
+Structural Analysis Systems
+Structural Analysis Technologies
+Structural Engineering Analysis
+Structural Engineering Applications
+Structural Engineering Design
+Structural Engineering Fundamentals
+Structural Engineering Systems
+Surface Engineering
+Surface Engineering Analysis
+Surface Engineering Design
+Surface Engineering Fundamentals
+Surface Engineering Lab
+Surface Engineering Laboratory
+Surface Engineering Systems
+Surface Engineering Technologies
+Surveying Design
+Surveying Lab
+Surveying Systems
+Technical Communication Analysis
+Technical Communication Design
+Technical Communication Fundamentals
+Technical Communication Lab
+Theory of Computation Laboratory
+Theory of Computation Technologies
+Thermal Engineering
+Thermal Engineering Design
+Thermal Engineering Fundamentals
+Thermal Engineering Technologies
+Thermodynamics
+Thermodynamics Analysis
+Thermodynamics Applications
+Thermodynamics Fundamentals
+Thermodynamics Lab
+Thermodynamics Laboratory
+Tissue Engineering Analysis
+Tissue Engineering Applications
+Tissue Engineering Design
+Tissue Engineering Fundamentals
+Tissue Engineering Lab
+Tissue Engineering Laboratory
+Tissue Engineering Systems
+Tissue Engineering Technologies
+Transmission and Distribution
+Transmission and Distribution Applications
+Transmission and Distribution Design
+Transmission and Distribution Fundamentals
+Transmission and Distribution Lab
+Transmission and Distribution Systems
+Transportation Engineering
+Transportation Engineering Analysis
+Transportation Engineering Design
+Transportation Engineering Laboratory
+Transportation Planning Design
+Transportation Planning Lab
+Transportation Planning Laboratory
+Transportation Planning Systems
+Urban Planning Applications
+Urban Planning Design
+Urban Planning Laboratory
+VLSI Design Design
+VLSI Design Fundamentals
+VLSI Design Lab
+VLSI Design Laboratory
+VLSI Design Systems
+VLSI Design Technologies
+Vehicle Dynamics Analysis
+Vehicle Dynamics Applications
+Vehicle Dynamics Design
+Vehicle Dynamics Fundamentals
+Vehicle Dynamics Lab
+Vehicle Dynamics Systems
+Vehicle Dynamics Technologies
+Wastewater Engineering Applications
+Wastewater Engineering Design
+Wastewater Engineering Fundamentals
+Wastewater Engineering Laboratory
+Wastewater Engineering Technologies
+Web Development Applications
+Web Development Lab
+Web Development Technologies
+Web Technologies Applications
+Web Technologies Lab
+Web Technologies Systems
+Wireless Communication Lab
+Wireless Communication Technologies

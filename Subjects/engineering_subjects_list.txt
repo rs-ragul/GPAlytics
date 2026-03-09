@@ -1,0 +1,130 @@
+Mathematics I (Calculus)
+Mathematics II (Linear Algebra)
+Mathematics III (Differential Equations)
+Probability and Statistics
+Discrete Mathematics
+Engineering Physics
+Engineering Chemistry
+Engineering Graphics
+Engineering Mechanics
+Basic Electrical Engineering
+Basic Electronics Engineering
+Environmental Science
+Professional English / Technical Communication
+Engineering Ethics
+Computer Programming
+Problem Solving and Programming
+Data Structures
+Algorithms
+Object Oriented Programming
+Operating Systems
+Database Management Systems
+Computer Networks
+Software Engineering
+Artificial Intelligence
+Machine Learning
+Deep Learning
+Natural Language Processing
+Computer Architecture
+Digital Logic Design
+Microprocessors
+Microcontrollers
+Embedded Systems
+Distributed Systems
+Cloud Computing
+Cyber Security
+Cryptography
+Ethical Hacking
+Network Security
+Web Technologies
+Web Development
+Mobile Application Development
+Human Computer Interaction
+Compiler Design
+Parallel Computing
+Data Mining
+Big Data Analytics
+Information Retrieval
+Blockchain Technology
+Internet of Things
+Digital Signal Processing
+Signals and Systems
+Control Systems
+Analog Electronics
+Digital Electronics
+VLSI Design
+Communication Systems
+Wireless Communication
+Optical Communication
+Radar Systems
+Satellite Communication
+Power Systems
+Electrical Machines
+Power Electronics
+High Voltage Engineering
+Renewable Energy Systems
+Energy Engineering
+Thermodynamics
+Fluid Mechanics
+Heat Transfer
+Manufacturing Processes
+Machine Design
+Engineering Materials
+Mechanics of Materials
+Robotics
+Mechatronics
+Industrial Engineering
+Operations Research
+Supply Chain Management
+Quality Control
+Automation
+Instrumentation
+Process Control
+Measurement and Sensors
+Structural Engineering
+Geotechnical Engineering
+Transportation Engineering
+Hydrology
+Hydraulics
+Environmental Engineering
+Construction Management
+Surveying
+Urban Planning
+Transportation Planning
+Bridge Engineering
+Concrete Technology
+Structural Analysis
+Steel Structures
+Aerodynamics
+Aerospace Structures
+Flight Mechanics
+Space Technology
+Propulsion Systems
+Avionics
+Aircraft Design
+Bioengineering
+Biomedical Instrumentation
+Biomechanics
+Medical Imaging
+Genetic Engineering
+Bioprocess Engineering
+Nanotechnology
+Materials Science
+Advanced Materials
+Surface Engineering
+Corrosion Engineering
+Polymer Engineering
+Thermal Engineering
+Automotive Engineering
+Vehicle Dynamics
+Electric Vehicles
+Hybrid Vehicles
+Project Management
+Engineering Economics
+Entrepreneurship
+Research Methodology
+Technical Seminar
+Mini Project
+Major Project
+Industrial Training
+Internship

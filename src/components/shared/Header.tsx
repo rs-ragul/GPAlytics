@@ -17,13 +17,15 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/", label: "Home", icon: GraduationCap },
-  { href: "/gpa", label: "GPA Calculator", icon: Calculator },
-  { href: "/cgpa", label: "CGPA Calculator", icon: FileText },
+  { href: "/gpa-calculator", label: "GPA Calculator", icon: Calculator },
+  { href: "/cgpa-calculator", label: "CGPA Calculator", icon: FileText },
+  { href: "/sgpa-calculator", label: "SGPA Calculator", icon: FileText },
+  { href: "/gpa-predictor", label: "GPA Predictor", icon: TrendingUp },
   { href: "/scan", label: "Scan Results", icon: Scan },
   { href: "/insights", label: "Insights", icon: Lightbulb },
-  { href: "/predict", label: "Predictor", icon: TrendingUp },
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/about", label: "About", icon: Info },
+  { href: "/blog", label: "Blog", icon: FileText },
 ];
 
 export function Header() {
@@ -43,7 +45,7 @@ export function Header() {
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-purple-500 flex items-center justify-center">
                 <GraduationCap className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-bold gradient-text">GradePilot</span>
+              <span className="text-xl font-bold gradient-text">GPAlytics</span>
             </Link>
 
             <div className="hidden md:flex items-center gap-1">
@@ -80,7 +82,7 @@ export function Header() {
 
             {/* Mobile menu button - simplified for now */}
             <div className="md:hidden">
-              <Link href="/gpa" className="text-sm text-primary font-medium">
+              <Link href="/gpa-calculator" className="text-sm text-primary font-medium">
                 Calculate
               </Link>
             </div>

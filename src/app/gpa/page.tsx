@@ -2,13 +2,13 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Trash2, Calculator, BookOpen, Award } from "lucide-react";
+import { Plus, Trash2, BookOpen, Award } from "lucide-react";
 import { GlassCard } from "@/components/shared/GlassCard";
 import { AnimatedButton } from "@/components/shared/AnimatedButton";
 import { AnimatedNumber } from "@/components/shared/AnimatedNumber";
 import { SubjectRow, SubjectTableHeader } from "@/components/features/SubjectRow";
 import { InsightsList } from "@/components/features/InsightCard";
-import { calculateGPA, getGPAStatus, GRADE_POINTS } from "@/lib/utils";
+import { calculateGPA, getGPAStatus } from "@/lib/utils";
 import { generateInsights } from "@/lib/insights";
 
 interface Subject {
@@ -161,25 +161,6 @@ export default function GPACalculatorPage() {
                   <div className="text-2xl font-bold text-white">{subjects.filter(s => s.grade).length}</div>
                   <div className="text-sm text-muted-foreground">Subjects Graded</div>
                 </div>
-              </div>
-            </GlassCard>
-
-            {/* Grade Points Reference */}
-            <GlassCard>
-              <h3 className="font-semibold mb-4 flex items-center gap-2">
-                <Calculator className="w-4 h-4 text-primary" />
-                Grade Points
-              </h3>
-              <div className="space-y-2">
-                {Object.entries(GRADE_POINTS).map(([grade, points]) => (
-                  <div
-                    key={grade}
-                    className="flex justify-between items-center p-2 rounded-lg bg-white/5"
-                  >
-                    <span className="font-medium">{grade}</span>
-                    <span className="text-muted-foreground">{points}</span>
-                  </div>
-                ))}
               </div>
             </GlassCard>
 
