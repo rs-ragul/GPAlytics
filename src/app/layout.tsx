@@ -36,6 +36,22 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "GPAlytics",
+    images: [
+      {
+        url: "/gpalyticslogo.png",
+        width: 1200,
+        height: 630,
+        alt: "GPAlytics",
+      },
+    ],
+  },
+  icons: {
+    icon: [
+      { url: "/gpalyticslogo.ico" },
+      { url: "/gpalyticslogo.png", type: "image/png" },
+    ],
+    shortcut: "/gpalyticslogo.ico",
+    apple: "/gpalyticslogo.png",
   },
 };
 

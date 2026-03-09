@@ -190,16 +190,6 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="mt-8 flex items-center justify-center">
-              <Image
-                src="/favicon.ico"
-                width={40}
-                height={40}
-                alt="GPAlytics icon"
-                loading="lazy"
-                className="rounded-md opacity-90"
-              />
-            </div>
           </motion.div>
 
           {/* Floating stats */}

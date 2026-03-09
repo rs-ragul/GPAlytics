@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { GraduationCap, Globe, Linkedin, Github, Instagram } from "lucide-react";
+import { Globe, Linkedin, Github, Instagram } from "lucide-react";
 
 const socialLinks = [
   {
@@ -39,9 +40,14 @@ export function Footer() {
         >
           {/* Logo & Brand */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-purple-500 flex items-center justify-center">
-              <GraduationCap className="w-4 h-4 text-white" />
-            </div>
+            <Image
+              src="/gpalyticslogo.png"
+              alt="GPAlytics logo"
+              width={32}
+              height={32}
+              className="rounded-lg"
+              loading="lazy"
+            />
             <span className="text-lg font-bold gradient-text">GPAlytics</span>
           </div>
 
