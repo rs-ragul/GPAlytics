@@ -2,10 +2,12 @@
 
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
-import { Target, TrendingUp, AlertCircle, CheckCircle, Calculator, Info } from "lucide-react";
+import { Target, TrendingUp, AlertCircle, CheckCircle, Calculator, Info, Save } from "lucide-react";
 import { GlassCard } from "@/components/shared/GlassCard";
+import { AnimatedButton } from "@/components/shared/AnimatedButton";
 import { AnimatedNumber } from "@/components/shared/AnimatedNumber";
 import { predictFutureCGPA } from "@/lib/insights";
+import { saveAcademicRecord } from "@/lib/records";
 import { cn } from "@/lib/utils";
 
 export default function PredictPage() {
@@ -14,6 +16,8 @@ export default function PredictPage() {
   const [targetCGPA, setTargetCGPA] = useState(8.5);
   const [semestersRemaining, setSemestersRemaining] = useState(2);
   const [creditsPerSemester, setCreditsPerSemester] = useState(20);
+  const [saving, setSaving] = useState(false);
+  const [saveMessage, setSaveMessage] = useState<string | null>(null);
 
   const result = useMemo(() => {
     const futureCredits = semestersRemaining * creditsPerSemester;
@@ -30,6 +34,32 @@ export default function PredictPage() {
   const predictedCGPA = result.achievable && result.requiredGPA !== null
     ? ((currentCGPA * currentCredits + result.requiredGPA * totalFutureCredits) / totalCredits)
     : 0;
+
+  const savePredictionRecord = async () => {
+    if (!result.achievable || result.requiredGPA === null) {
+      setSaveMessage("Only achievable prediction plans can be saved.");
+      return;
+    }
+
+    setSaving(true);
+    const response = await saveAcademicRecord({
+      type: "predict",
+      title: `Target ${targetCGPA.toFixed(2)} in ${semestersRemaining} semester(s)`,
+      score: result.requiredGPA,
+      credits: totalFutureCredits,
+      metadata: {
+        currentCGPA,
+        currentCredits,
+        targetCGPA,
+        semestersRemaining,
+        creditsPerSemester,
+        predictedCGPA,
+      },
+    });
+
+    setSaveMessage(response.message);
+    setSaving(false);
+  };
 
   return (
     <div className="min-h-screen py-8 px-4">
@@ -238,6 +268,24 @@ export default function PredictPage() {
                   <span className="font-medium">{targetCGPA.toFixed(2)}</span>
                 </div>
               </div>
+            </GlassCard>
+
+            <GlassCard>
+              <h3 className="font-semibold mb-3">Save Prediction</h3>
+              <AnimatedButton
+                variant="outline"
+                size="sm"
+                onClick={savePredictionRecord}
+                loading={saving}
+                disabled={!result.achievable || result.requiredGPA === null}
+                icon={<Save className="w-4 h-4" />}
+                className="w-full"
+              >
+                Save to Dashboard
+              </AnimatedButton>
+              {saveMessage ? (
+                <p className="text-xs text-muted-foreground mt-3">{saveMessage}</p>
+              ) : null}
             </GlassCard>
 
             {/* Info */}

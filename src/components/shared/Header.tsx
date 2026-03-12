@@ -170,7 +170,7 @@ export function Header() {
           </div>
 
           {mobileOpen && (
-            <div className="md:hidden mt-3 border-t border-white/10 pt-3 space-y-2">
+            <div className="md:hidden mt-3 border-t border-white/20 pt-3 space-y-2 rounded-2xl bg-slate-950/90 px-2 pb-2 backdrop-blur-xl shadow-xl">
               {mainNavItems.map((item) => {
                 const Icon = item.icon;
                 const isActive = pathname === item.href;
@@ -181,7 +181,7 @@ export function Header() {
                     onClick={() => setMobileOpen(false)}
                     className={cn(
                       "flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors",
-                      isActive ? "bg-primary/20 text-white" : "text-muted-foreground hover:text-white hover:bg-white/5"
+                      isActive ? "bg-primary/30 text-white" : "text-slate-100 hover:text-white hover:bg-white/10"
                     )}
                   >
                     <Icon className="w-4 h-4" />
@@ -190,8 +190,8 @@ export function Header() {
                 );
               })}
 
-              <div className="pt-2 mt-2 border-t border-white/10">
-                <div className="px-3 py-1 text-xs uppercase tracking-wide text-muted-foreground">Calculators</div>
+              <div className="pt-2 mt-2 border-t border-white/20">
+                <div className="px-3 py-1 text-xs uppercase tracking-wide text-slate-300">Calculators</div>
                 {calculatorItems.map((item) => (
                   <Link
                     key={item.href}
@@ -199,7 +199,7 @@ export function Header() {
                     onClick={() => setMobileOpen(false)}
                     className={cn(
                       "flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors",
-                      pathname === item.href ? "bg-primary/20 text-white" : "text-muted-foreground hover:text-white hover:bg-white/5"
+                      pathname === item.href ? "bg-primary/30 text-white" : "text-slate-100 hover:text-white hover:bg-white/10"
                     )}
                   >
                     <Calculator className="w-4 h-4" />

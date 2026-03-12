@@ -2,12 +2,13 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Calendar, TrendingUp, Award, CreditCard } from "lucide-react";
+import { Plus, Calendar, TrendingUp, Award, CreditCard, Save } from "lucide-react";
 import { GlassCard } from "@/components/shared/GlassCard";
 import { AnimatedButton } from "@/components/shared/AnimatedButton";
 import { AnimatedNumber } from "@/components/shared/AnimatedNumber";
 import { SemesterRow, SemesterTableHeader } from "@/components/features/SemesterRow";
 import { calculateCGPA } from "@/lib/utils";
+import { saveAcademicRecord } from "@/lib/records";
 import {
   LineChart,
   Line,
@@ -34,6 +35,8 @@ export default function CGPACalculatorPage() {
     { id: "3", name: "Semester 3", gpa: 8.8, credits: 21 },
     { id: "4", name: "Semester 4", gpa: 0, credits: 0 },
   ]);
+  const [saveMessage, setSaveMessage] = useState<string | null>(null);
+  const [saving, setSaving] = useState(false);
 
   const cgpa = useMemo(() => {
     const validSemesters = semesters.filter(s => s.gpa > 0 && s.credits > 0);
@@ -44,9 +47,13 @@ export default function CGPACalculatorPage() {
     return semesters.reduce((sum, s) => sum + (s.credits || 0), 0);
   }, [semesters]);
 
-  const validSemestersCount = useMemo(() => {
-    return semesters.filter(s => s.gpa > 0 && s.credits > 0).length;
+  const validSemesters = useMemo(() => {
+    return semesters.filter(s => s.gpa > 0 && s.credits > 0);
   }, [semesters]);
+
+  const validSemestersCount = useMemo(() => {
+    return validSemesters.length;
+  }, [validSemesters]);
 
   const chartData = useMemo(() => {
     return semesters
@@ -82,6 +89,24 @@ export default function CGPACalculatorPage() {
         s.id === id ? { ...s, [field]: value } : s
       )
     );
+  };
+
+  const saveCurrentRecord = async () => {
+    if (validSemesters.length === 0) {
+      setSaveMessage("Add at least one valid semester record to save.");
+      return;
+    }
+
+    setSaving(true);
+    const result = await saveAcademicRecord({
+      type: "cgpa",
+      title: `CGPA Snapshot (${new Date().toLocaleDateString()})`,
+      score: cgpa,
+      credits: totalCredits,
+      metadata: { semesters: validSemesters },
+    });
+    setSaveMessage(result.message);
+    setSaving(false);
   };
 
   return (
@@ -233,6 +258,22 @@ export default function CGPACalculatorPage() {
                   <div className="text-2xl font-bold text-white">{validSemestersCount}</div>
                   <div className="text-sm text-muted-foreground">Semesters</div>
                 </div>
+              </div>
+
+              <div className="mt-5 pt-4 border-t border-white/10 space-y-3">
+                <AnimatedButton
+                  variant="outline"
+                  size="sm"
+                  onClick={saveCurrentRecord}
+                  loading={saving}
+                  icon={<Save className="w-4 h-4" />}
+                  className="w-full"
+                >
+                  Save to Dashboard
+                </AnimatedButton>
+                {saveMessage ? (
+                  <p className="text-xs text-muted-foreground">{saveMessage}</p>
+                ) : null}
               </div>
             </GlassCard>
 

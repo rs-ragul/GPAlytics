@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Trash2, BookOpen, Award } from "lucide-react";
+import { BookOpen, Plus, Save, Award } from "lucide-react";
 import { GlassCard } from "@/components/shared/GlassCard";
 import { AnimatedButton } from "@/components/shared/AnimatedButton";
 import { AnimatedNumber } from "@/components/shared/AnimatedNumber";
@@ -10,6 +10,7 @@ import { SubjectRow, SubjectTableHeader } from "@/components/features/SubjectRow
 import { InsightsList } from "@/components/features/InsightCard";
 import { calculateGPA, getGPAStatus } from "@/lib/utils";
 import { generateInsights } from "@/lib/insights";
+import { saveAcademicRecord } from "@/lib/records";
 
 interface Subject {
   id: string;
@@ -25,6 +26,8 @@ export default function GPACalculatorPage() {
     { id: "3", name: "", credits: 3, grade: "" },
     { id: "4", name: "", credits: 3, grade: "" },
   ]);
+  const [saveMessage, setSaveMessage] = useState<string | null>(null);
+  const [saving, setSaving] = useState(false);
 
   const gpa = useMemo(() => {
     return calculateGPA(subjects);
@@ -36,17 +39,19 @@ export default function GPACalculatorPage() {
 
   const status = getGPAStatus(gpa);
 
-  const insights = useMemo(() => {
-    return generateInsights(
-      subjects
-        .filter((s) => s.grade)
-        .map((s) => ({
-          name: s.name || "Untitled",
-          credits: s.credits,
-          grade: s.grade,
-        }))
-    );
+  const gradedSubjects = useMemo(() => {
+    return subjects
+      .filter((s) => s.grade)
+      .map((s) => ({
+        name: s.name || "Untitled",
+        credits: s.credits,
+        grade: s.grade,
+      }));
   }, [subjects]);
+
+  const insights = useMemo(() => {
+    return generateInsights(gradedSubjects);
+  }, [gradedSubjects]);
 
   const addSubject = () => {
     setSubjects([
@@ -67,6 +72,24 @@ export default function GPACalculatorPage() {
         s.id === id ? { ...s, [field]: value } : s
       )
     );
+  };
+
+  const saveCurrentRecord = async () => {
+    if (gradedSubjects.length === 0) {
+      setSaveMessage("Add at least one graded subject to save.");
+      return;
+    }
+
+    setSaving(true);
+    const result = await saveAcademicRecord({
+      type: "gpa",
+      title: `GPA Snapshot (${new Date().toLocaleDateString()})`,
+      score: gpa,
+      credits: totalCredits,
+      metadata: { subjects: gradedSubjects },
+    });
+    setSaveMessage(result.message);
+    setSaving(false);
   };
 
   return (
@@ -90,19 +113,11 @@ export default function GPACalculatorPage() {
           {/* Main Calculator */}
           <div className="lg:col-span-2 space-y-6">
             <GlassCard>
-              <div className="flex items-center justify-between mb-6">
+              <div className="mb-6">
                 <h2 className="text-xl font-semibold flex items-center gap-2">
                   <BookOpen className="w-5 h-5 text-primary" />
                   Subjects
                 </h2>
-                <AnimatedButton
-                  variant="outline"
-                  size="sm"
-                  onClick={addSubject}
-                  icon={<Plus className="w-4 h-4" />}
-                >
-                  Add Subject
-                </AnimatedButton>
               </div>
 
               <SubjectTableHeader />
@@ -123,6 +138,17 @@ export default function GPACalculatorPage() {
                     />
                   ))}
                 </AnimatePresence>
+              </div>
+
+              <div className="mt-5">
+                <AnimatedButton
+                  variant="outline"
+                  size="sm"
+                  onClick={addSubject}
+                  icon={<Plus className="w-4 h-4" />}
+                >
+                  Add Subject
+                </AnimatedButton>
               </div>
             </GlassCard>
           </div>
@@ -158,9 +184,25 @@ export default function GPACalculatorPage() {
                   <div className="text-sm text-muted-foreground">Total Credits</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-white">{subjects.filter(s => s.grade).length}</div>
+                  <div className="text-2xl font-bold text-white">{gradedSubjects.length}</div>
                   <div className="text-sm text-muted-foreground">Subjects Graded</div>
                 </div>
+              </div>
+
+              <div className="mt-5 pt-4 border-t border-white/10 space-y-3">
+                <AnimatedButton
+                  variant="outline"
+                  size="sm"
+                  onClick={saveCurrentRecord}
+                  loading={saving}
+                  icon={<Save className="w-4 h-4" />}
+                  className="w-full"
+                >
+                  Save to Dashboard
+                </AnimatedButton>
+                {saveMessage ? (
+                  <p className="text-xs text-muted-foreground">{saveMessage}</p>
+                ) : null}
               </div>
             </GlassCard>
 

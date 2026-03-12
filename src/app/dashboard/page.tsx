@@ -1,342 +1,393 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { 
-  LayoutDashboard, 
-  TrendingUp, 
-  Award, 
-  CreditCard,
-  BookOpen,
-  Target,
-  ArrowUp,
-  ArrowDown,
-  Minus
-} from "lucide-react";
-import { GlassCard } from "@/components/shared/GlassCard";
-import { AnimatedNumber } from "@/components/shared/AnimatedNumber";
-import { InsightsList } from "@/components/features/InsightCard";
-import { calculateGPA, calculateCGPA, getGPAStatus, GRADE_POINTS } from "@/lib/utils";
-import { generateInsights } from "@/lib/insights";
 import {
+  Award,
+  CalendarClock,
+  CreditCard,
+  LayoutDashboard,
   LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
+  LogOut,
+  Target,
+  TrendingUp,
+} from "lucide-react";
+import { signOut } from "firebase/auth";
+import { GlassCard } from "@/components/shared/GlassCard";
+import { AnimatedButton } from "@/components/shared/AnimatedButton";
+import { AnimatedNumber } from "@/components/shared/AnimatedNumber";
+import { useAuthUser } from "@/lib/useAuthUser";
+import { AcademicRecord, getUserRecords } from "@/lib/records";
+import { getFirebaseAuth } from "@/lib/firebase";
+import {
   Area,
   AreaChart,
+  CartesianGrid,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
 } from "recharts";
 
-interface Subject {
-  id: string;
-  name: string;
-  credits: number;
-  grade: string;
+function formatRecordLabel(record: AcademicRecord) {
+  if (record.type === "gpa") return "GPA";
+  if (record.type === "cgpa") return "CGPA";
+  return "Prediction";
 }
 
-interface Semester {
-  id: string;
-  name: string;
-  gpa: number;
-  credits: number;
+function formatDate(value: number) {
+  return new Date(value).toLocaleString();
 }
 
 export default function DashboardPage() {
-  // Sample data for demonstration
-  const [subjects] = useState<Subject[]>([
-    { id: "1", name: "Mathematics", credits: 4, grade: "A" },
-    { id: "2", name: "Physics", credits: 4, grade: "A+" },
-    { id: "3", name: "Computer Science", credits: 3, grade: "A" },
-    { id: "4", name: "English", credits: 2, grade: "A+" },
-    { id: "5", name: "Data Structures", credits: 3, grade: "B+" },
-  ]);
+  const { user, loading, error } = useAuthUser();
+  const [records, setRecords] = useState<AcademicRecord[]>([]);
+  const [recordsLoading, setRecordsLoading] = useState(false);
+  const [recordsError, setRecordsError] = useState<string | null>(null);
 
-  const [semesters] = useState<Semester[]>([
-    { id: "1", name: "Sem 1", gpa: 8.2, credits: 20 },
-    { id: "2", name: "Sem 2", gpa: 8.5, credits: 22 },
-    { id: "3", name: "Sem 3", gpa: 8.0, credits: 21 },
-    { id: "4", name: "Sem 4", gpa: 8.8, credits: 23 },
-  ]);
+  useEffect(() => {
+    async function loadRecords(uid: string) {
+      setRecordsLoading(true);
+      setRecordsError(null);
 
-  const currentGPA = useMemo(() => calculateGPA(subjects), [subjects]);
-  const cgpa = useMemo(() => calculateCGPA(semesters), [semesters]);
-  const totalCredits = useMemo(() => subjects.reduce((sum, s) => sum + s.credits, 0), [subjects]);
-  const status = getGPAStatus(currentGPA);
+      try {
+        const nextRecords = await getUserRecords(uid);
+        setRecords(nextRecords);
+      } catch (err) {
+        setRecordsError(err instanceof Error ? err.message : "Failed to load your records.");
+      } finally {
+        setRecordsLoading(false);
+      }
+    }
 
-  const insights = useMemo(() => generateInsights(subjects), [subjects]);
+    if (user?.uid) {
+      loadRecords(user.uid);
+      return;
+    }
 
-  const chartData = useMemo(() => {
-    return semesters.map((s) => ({
-      name: s.name,
-      gpa: s.gpa,
-    }));
-  }, [semesters]);
+    setRecords([]);
+  }, [user?.uid]);
+
+  const latestGpa = useMemo(() => {
+    return records.find((record) => record.type === "gpa")?.score ?? 0;
+  }, [records]);
+
+  const latestCgpa = useMemo(() => {
+    return records.find((record) => record.type === "cgpa")?.score ?? 0;
+  }, [records]);
+
+  const predictionCount = useMemo(() => {
+    return records.filter((record) => record.type === "predict").length;
+  }, [records]);
 
   const gpaTrend = useMemo(() => {
-    if (semesters.length < 2) return 0;
-    const last = semesters[semesters.length - 1].gpa;
-    const prev = semesters[semesters.length - 2].gpa;
-    return Number((last - prev).toFixed(2));
-  }, [semesters]);
+    const gpaRecords = records.filter((record) => record.type === "gpa");
+    if (gpaRecords.length < 2) {
+      return 0;
+    }
 
-  const topSubjects = useMemo(() => {
-    return [...subjects]
-      .sort((a, b) => (GRADE_POINTS[b.grade] || 0) - (GRADE_POINTS[a.grade] || 0))
-      .slice(0, 3);
-  }, [subjects]);
+    return Number((gpaRecords[0].score - gpaRecords[1].score).toFixed(2));
+  }, [records]);
 
-  const subjectsNeedingAttention = useMemo(() => {
-    return subjects
-      .filter((s) => (GRADE_POINTS[s.grade] || 0) < 8 && s.credits >= 3)
-      .slice(0, 3);
-  }, [subjects]);
+  const chartData = useMemo(() => {
+    const sortedAsc = [...records]
+      .sort((a, b) => a.createdAtMs - b.createdAtMs)
+      .slice(-12);
+
+    return sortedAsc.map((record, index) => ({
+      index: index + 1,
+      score: Number(record.score.toFixed(2)),
+      type: formatRecordLabel(record),
+    }));
+  }, [records]);
+
+  const topRecords = useMemo(() => {
+    return [...records].sort((a, b) => b.score - a.score).slice(0, 3);
+  }, [records]);
+
+  const focusRecords = useMemo(() => {
+    return records.filter((record) => record.score < 7).slice(0, 3);
+  }, [records]);
+
+  async function handleLogout() {
+    const auth = getFirebaseAuth();
+    await signOut(auth);
+  }
+
+  if (loading) {
+    return (
+      <div className="min-h-screen px-4 py-8">
+        <div className="max-w-5xl mx-auto">
+          <GlassCard className="text-center py-10">
+            <p className="text-lg">Loading your dashboard...</p>
+          </GlassCard>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen px-4 py-8">
+        <div className="max-w-5xl mx-auto">
+          <GlassCard className="text-center py-10">
+            <h1 className="text-2xl font-bold mb-3">Firebase setup required</h1>
+            <p className="text-muted-foreground">{error}</p>
+            <p className="text-sm text-muted-foreground mt-4">
+              Set NEXT_PUBLIC_FIREBASE_API_KEY, AUTH_DOMAIN, PROJECT_ID, STORAGE_BUCKET,
+              MESSAGING_SENDER_ID, and APP_ID in your environment.
+            </p>
+          </GlassCard>
+        </div>
+      </div>
+    );
+  }
+
+  if (!user) {
+    return (
+      <div className="min-h-screen px-4 py-8 flex items-center justify-center">
+        <div className="max-w-xl w-full">
+          <GlassCard className="text-center py-10">
+            <h1 className="text-3xl font-bold mb-3">Personal Dashboard</h1>
+            <p className="text-muted-foreground mb-8">
+              Login or register to view your own records, trends, and academic analytics.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-3">
+              <Link href="/login">
+                <AnimatedButton className="w-full sm:w-auto">Login</AnimatedButton>
+              </Link>
+              <Link href="/register">
+                <AnimatedButton variant="outline" className="w-full sm:w-auto">Register</AnimatedButton>
+              </Link>
+            </div>
+          </GlassCard>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div className="min-h-screen py-8 px-4">
+    <div className="min-h-screen px-4 py-8">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <motion.div
-          className="mb-12"
+          className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Academic <span className="gradient-text">Dashboard</span>
-          </h1>
-          <p className="text-muted-foreground text-lg">
-            Your comprehensive academic performance overview
-          </p>
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">
+              Personal <span className="gradient-text">Dashboard</span>
+            </h1>
+            <p className="text-muted-foreground">
+              Welcome {user.displayName || user.email}. This dashboard is built from your saved records.
+            </p>
+          </div>
+          <AnimatedButton
+            variant="ghost"
+            size="sm"
+            onClick={handleLogout}
+            icon={<LogOut className="w-4 h-4" />}
+          >
+            Logout
+          </AnimatedButton>
         </motion.div>
 
-        {/* Stats Grid */}
+        {recordsError ? (
+          <GlassCard className="mb-6 border border-error/40">
+            <p className="text-error text-sm">{recordsError}</p>
+          </GlassCard>
+        ) : null}
+
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           <GlassCard>
-            <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 rounded-lg bg-primary/20">
-                <Award className="w-5 h-5 text-primary" />
-              </div>
-              <span className="text-sm text-muted-foreground">Current GPA</span>
+            <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+              <Award className="w-4 h-4 text-primary" />
+              Latest GPA
             </div>
-            <div className={`text-3xl font-bold ${status.color}`}>
-              <AnimatedNumber value={currentGPA} decimals={2} />
+            <div className="text-3xl font-bold text-primary">
+              <AnimatedNumber value={latestGpa} decimals={2} />
             </div>
           </GlassCard>
 
           <GlassCard>
-            <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 rounded-lg bg-success/20">
-                <TrendingUp className="w-5 h-5 text-success" />
-              </div>
-              <span className="text-sm text-muted-foreground">Overall CGPA</span>
+            <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+              <TrendingUp className="w-4 h-4 text-success" />
+              Latest CGPA
             </div>
             <div className="text-3xl font-bold text-success">
-              <AnimatedNumber value={cgpa} decimals={2} />
+              <AnimatedNumber value={latestCgpa} decimals={2} />
             </div>
           </GlassCard>
 
           <GlassCard>
-            <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 rounded-lg bg-warning/20">
-                <CreditCard className="w-5 h-5 text-warning" />
-              </div>
-              <span className="text-sm text-muted-foreground">Total Credits</span>
+            <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+              <CreditCard className="w-4 h-4 text-warning" />
+              Saved Records
             </div>
             <div className="text-3xl font-bold text-white">
-              <AnimatedNumber value={totalCredits} decimals={0} />
+              <AnimatedNumber value={records.length} decimals={0} />
             </div>
           </GlassCard>
 
           <GlassCard>
-            <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 rounded-lg bg-purple-500/20">
-                <LayoutDashboard className="w-5 h-5 text-purple-400" />
-              </div>
-              <span className="text-sm text-muted-foreground">Semesters</span>
+            <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+              <Target className="w-4 h-4 text-primary" />
+              Predictions
             </div>
             <div className="text-3xl font-bold text-white">
-              <AnimatedNumber value={semesters.length} decimals={0} />
+              <AnimatedNumber value={predictionCount} decimals={0} />
             </div>
           </GlassCard>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {/* Main Content */}
+        <div className="grid lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2 space-y-6">
-            {/* Performance Chart */}
             <GlassCard>
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-6">
                 <h2 className="text-xl font-semibold flex items-center gap-2">
-                  <TrendingUp className="w-5 h-5 text-primary" />
-                  GPA Trend
+                  <LineChart className="w-5 h-5 text-primary" />
+                  Performance Timeline
                 </h2>
-                <div className={`flex items-center gap-1 text-sm font-medium ${
-                  gpaTrend > 0 ? "text-success" : gpaTrend < 0 ? "text-error" : "text-muted-foreground"
-                }`}>
-                  {gpaTrend > 0 ? <ArrowUp className="w-4 h-4" /> : gpaTrend < 0 ? <ArrowDown className="w-4 h-4" /> : <Minus className="w-4 h-4" />}
-                  {Math.abs(gpaTrend)} from last semester
+                <span className={`text-sm font-semibold ${gpaTrend >= 0 ? "text-success" : "text-error"}`}>
+                  {gpaTrend >= 0 ? "+" : ""}
+                  {gpaTrend.toFixed(2)} from previous GPA record
+                </span>
+              </div>
+
+              {recordsLoading ? (
+                <p className="text-muted-foreground">Loading records...</p>
+              ) : chartData.length === 0 ? (
+                <p className="text-muted-foreground">
+                  No records yet. Save from GPA, CGPA, or Predictor pages to see your analytics.
+                </p>
+              ) : (
+                <div className="h-72">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <AreaChart data={chartData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
+                      <defs>
+                        <linearGradient id="dashScoreGradient" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="#6366F1" stopOpacity={0.35} />
+                          <stop offset="95%" stopColor="#6366F1" stopOpacity={0} />
+                        </linearGradient>
+                      </defs>
+                      <CartesianGrid strokeDasharray="3 3" stroke="#334155" opacity={0.5} />
+                      <XAxis dataKey="index" stroke="#94A3B8" tickLine={false} />
+                      <YAxis domain={[0, 10]} stroke="#94A3B8" tickLine={false} axisLine={false} />
+                      <Tooltip
+                        contentStyle={{
+                          backgroundColor: "#1E293B",
+                          border: "1px solid #475569",
+                          borderRadius: "8px",
+                          color: "#F8FAFC",
+                        }}
+                        labelFormatter={(label) => `Record ${label}`}
+                      />
+                      <Area
+                        type="monotone"
+                        dataKey="score"
+                        stroke="#6366F1"
+                        strokeWidth={3}
+                        fillOpacity={1}
+                        fill="url(#dashScoreGradient)"
+                        dot={{ fill: "#6366F1", strokeWidth: 2, r: 5 }}
+                      />
+                    </AreaChart>
+                  </ResponsiveContainer>
                 </div>
-              </div>
-              <div className="h-64">
-                <ResponsiveContainer width="100%" height="100%">
-                  <AreaChart data={chartData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
-                    <defs>
-                      <linearGradient id="colorGpaDash" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#6366F1" stopOpacity={0.3} />
-                        <stop offset="95%" stopColor="#6366F1" stopOpacity={0} />
-                      </linearGradient>
-                    </defs>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#334155" opacity={0.5} />
-                    <XAxis 
-                      dataKey="name" 
-                      stroke="#94A3B8" 
-                      fontSize={12}
-                      tickLine={false}
-                    />
-                    <YAxis 
-                      domain={[0, 10]} 
-                      stroke="#94A3B8" 
-                      fontSize={12}
-                      tickLine={false}
-                      axisLine={false}
-                    />
-                    <Tooltip
-                      contentStyle={{
-                        backgroundColor: "#1E293B",
-                        border: "1px solid #475569",
-                        borderRadius: "8px",
-                        color: "#F8FAFC",
-                      }}
-                    />
-                    <Area
-                      type="monotone"
-                      dataKey="gpa"
-                      stroke="#6366F1"
-                      strokeWidth={3}
-                      fillOpacity={1}
-                      fill="url(#colorGpaDash)"
-                      dot={{ fill: "#6366F1", strokeWidth: 2, r: 6 }}
-                      activeDot={{ r: 8, fill: "#818CF8" }}
-                    />
-                  </AreaChart>
-                </ResponsiveContainer>
-              </div>
+              )}
             </GlassCard>
 
-            {/* Subject Performance */}
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Top Performers */}
+            <div className="grid sm:grid-cols-2 gap-6">
               <GlassCard>
                 <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                   <Award className="w-5 h-5 text-success" />
-                  Top Performers
+                  Top Records
                 </h3>
-                <div className="space-y-3">
-                  {topSubjects.map((subject, index) => (
-                    <motion.div
-                      key={subject.id}
-                      className="flex items-center justify-between p-3 rounded-lg bg-white/5"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                    >
-                      <div className="flex items-center gap-3">
-                        <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                          index === 0 ? "bg-yellow-500/20 text-yellow-400" :
-                          index === 1 ? "bg-gray-400/20 text-gray-300" :
-                          "bg-amber-700/20 text-amber-600"
-                        }`}>
-                          {index + 1}
-                        </div>
-                        <div>
-                          <div className="font-medium">{subject.name}</div>
-                          <div className="text-xs text-muted-foreground">{subject.credits} credits</div>
-                        </div>
-                      </div>
-                      <span className="px-3 py-1 rounded-lg bg-success/20 text-success font-bold">
-                        {subject.grade}
-                      </span>
-                    </motion.div>
-                  ))}
-                </div>
-              </GlassCard>
-
-              {/* Needs Attention */}
-              <GlassCard>
-                <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                  <Target className="w-5 h-5 text-warning" />
-                  Focus Areas
-                </h3>
-                {subjectsNeedingAttention.length > 0 ? (
+                {topRecords.length === 0 ? (
+                  <p className="text-sm text-muted-foreground">No saved records yet.</p>
+                ) : (
                   <div className="space-y-3">
-                    {subjectsNeedingAttention.map((subject, index) => (
-                      <motion.div
-                        key={subject.id}
-                        className="flex items-center justify-between p-3 rounded-lg bg-white/5"
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.1 }}
-                      >
-                        <div>
-                          <div className="font-medium">{subject.name}</div>
-                          <div className="text-xs text-muted-foreground">{subject.credits} credits</div>
+                    {topRecords.map((record) => (
+                      <div key={record.id} className="p-3 rounded-lg bg-white/5">
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm text-muted-foreground">{formatRecordLabel(record)}</span>
+                          <span className="font-bold text-success">{record.score.toFixed(2)}</span>
                         </div>
-                        <span className="px-3 py-1 rounded-lg bg-warning/20 text-warning font-bold">
-                          {subject.grade}
-                        </span>
-                      </motion.div>
+                        <p className="font-medium mt-1">{record.title}</p>
+                      </div>
                     ))}
                   </div>
+                )}
+              </GlassCard>
+
+              <GlassCard>
+                <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
+                  <LayoutDashboard className="w-5 h-5 text-warning" />
+                  Focus Area
+                </h3>
+                {focusRecords.length === 0 ? (
+                  <p className="text-sm text-muted-foreground">No low-score records right now. Keep it up.</p>
                 ) : (
-                  <div className="text-center py-8 text-muted-foreground">
-                    <Award className="w-12 h-12 text-success mx-auto mb-2" />
-                    <p>All subjects are performing well!</p>
+                  <div className="space-y-3">
+                    {focusRecords.map((record) => (
+                      <div key={record.id} className="p-3 rounded-lg bg-white/5">
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm text-muted-foreground">{formatRecordLabel(record)}</span>
+                          <span className="font-bold text-warning">{record.score.toFixed(2)}</span>
+                        </div>
+                        <p className="font-medium mt-1">{record.title}</p>
+                      </div>
+                    ))}
                   </div>
                 )}
               </GlassCard>
             </div>
           </div>
 
-          {/* Sidebar */}
           <div className="space-y-6">
-            {/* Quick Stats */}
             <GlassCard>
-              <h3 className="text-lg font-semibold mb-4">Performance Summary</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center p-3 rounded-lg bg-white/5">
-                  <span className="text-muted-foreground">GPA Status</span>
-                  <span className={`font-bold ${status.color}`}>{status.label}</span>
+              <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
+                <CalendarClock className="w-5 h-5 text-primary" />
+                Recent Activity
+              </h3>
+
+              {records.length === 0 ? (
+                <p className="text-sm text-muted-foreground">
+                  No activity yet. Save your calculations to build history.
+                </p>
+              ) : (
+                <div className="space-y-3">
+                  {records.slice(0, 8).map((record) => (
+                    <div key={record.id} className="p-3 rounded-lg bg-white/5">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs uppercase tracking-wide text-muted-foreground">
+                          {formatRecordLabel(record)}
+                        </span>
+                        <span className="font-semibold">{record.score.toFixed(2)}</span>
+                      </div>
+                      <p className="text-sm mt-1">{record.title}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{formatDate(record.createdAtMs)}</p>
+                    </div>
+                  ))}
                 </div>
-                <div className="flex justify-between items-center p-3 rounded-lg bg-white/5">
-                  <span className="text-muted-foreground">Subjects</span>
-                  <span className="font-bold">{subjects.length}</span>
-                </div>
-                <div className="flex justify-between items-center p-3 rounded-lg bg-white/5">
-                  <span className="text-muted-foreground">Semesters</span>
-                  <span className="font-bold">{semesters.length}</span>
-                </div>
-                <div className="flex justify-between items-center p-3 rounded-lg bg-white/5">
-                  <span className="text-muted-foreground">Trend</span>
-                  <span className={`font-bold ${
-                    gpaTrend > 0 ? "text-success" : gpaTrend < 0 ? "text-error" : "text-muted-foreground"
-                  }`}>
-                    {gpaTrend > 0 ? "+" : ""}{gpaTrend}
-                  </span>
-                </div>
-              </div>
+              )}
             </GlassCard>
 
-            {/* Insights */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Recommendations</h3>
-              <InsightsList insights={insights.slice(0, 3)} />
-            </div>
+            <GlassCard>
+              <h3 className="text-lg font-semibold mb-3">Save More Records</h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                Use calculators and save snapshots to keep your dashboard updated.
+              </p>
+              <div className="grid grid-cols-1 gap-2">
+                <Link href="/gpa-calculator" className="text-primary hover:underline">Go to GPA Calculator</Link>
+                <Link href="/cgpa-calculator" className="text-primary hover:underline">Go to CGPA Calculator</Link>
+                <Link href="/predict" className="text-primary hover:underline">Go to Predictor</Link>
+              </div>
+            </GlassCard>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
